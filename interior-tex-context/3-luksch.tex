@@ -1,0 +1,487 @@
+\AuthorStyle{Manu Luksch, Mukul Patel}
+
+\licenseStyle{Creative Commons Attribution - NonCommercial - ShareAlike license}
+
+\Eng{\Title{Faceless: Chasing the Data Shadow}
+
+\SubTitle{Stranger than fiction}
+
+Remote{}-controlled UAVs (Unmanned Aerial Vehicles) scan the city for
+anti{}-social behaviour. Talking cameras scold people for littering the
+streets (in children's voices). Biometric data is extracted from CCTV
+images to identify pedestrians by their face or gait. A housing
+project's surveillance cameras stream images onto the local cable
+channel, enabling the community to monitor itself. 
+\blank
+\PlaceImage{luksch3.jpg}{CCTV sculpture in a park in London}
+\PlaceImage{luksch1.jpg}{Poster in London}
+These are not projections of the science fiction film that this text discusses, but techniques that are used today in Merseyside \footnote{\quotation{Police spy in the sky fuels \quote{Big Brother fears}}, Philip Johnston,
+{\em Telegraph}, 23/05/2007 \Url{http://www.telegraph.co.uk/news/main.jhtml?xml=/news/2007/05/22/ndrone22.xml}
+}.
+{\em The Guardian} has reported the MoD rents out an RAF{}-staffed
+spy plane for public surveillance, carrying reconnaissance equipment
+able to monitor telephone conversations on the ground. It can also be
+used for automatic number plate recognition: \quotation{Cheshire police recently
+revealed they were using the Islander [aircraft] to identify people
+speeding, driving when using mobile phones, overtaking on double white
+lines, or driving erratically.}, Middlesborough \footnote{\quote{Talking} CCTV scolds offenders', BBC News, 4 April 2007
+\Url{http://news.bbc.co.uk/2/hi/uk_news/england/6524495.stm}}, Newham and Shoreditch \footnote{\quotation{If the face fits, you're nicked}, {\em Independent}, Nick Huber, Monday, 1 April 2002 \Url{http://www.independent.co.uk/news/business/analysis-and-features/if-the-face-fits-youre-nicked-656092.html}
+
+\quotation{In 2001 the Newham system was linked to a central control room operated
+by the London Metropolitan Police Force. In April 2001 the existing
+CCTV system in Birmingham city centre was upgraded to smart CCTV.
+People are routinely scanned by both systems and have their faces
+checked against the police databases.}
+
+Centre for Computing and Social Responsibility \Url{http://www.ccsr.cse.dmu.ac.uk/resources/general/ethicol/Ecv12no1.html}} in the UK. In terms of
+both density and sophistication, the UK leads the world in the
+deployment of surveillance technologies. With an estimated 4.2 million
+CCTV cameras in place, its inhabitants are the most watched in the
+world. \footnote{{\em A Report on the Surveillance Society.} For the Information
+Commissioner by the Surveillance Studies Network, September 2006, p.19.
+Available from \Url{http://www.ico.gov.uk}} Many London buses have five or more cameras inside, plus
+several outside, including one recording cars that drive in bus lanes.
+
+But CCTV images of our bodies are only one of many traces of data that
+we leave in our wake, voluntarily and involuntarily. Vehicles are
+tracked using Automated Number Plate Recognition systems, our movements
+revealed via location{}-aware devices (such as cell phones), the trails
+of our online activities recorded by Internet Service Providers, our
+conversations overheard by the international communications
+surveillance system Echelon, shopping habits monitored through store
+loyalty cards, individual purchases located using RFID
+(Radio{}-frequency identification) tags, and our meal preferences
+collected as part of PNR (flight passenger) data. \footnote{\quote{e{}-Borders} is a 
+{£} 1.2bn passenger{}-screening programme to
+be introduced in 2009 and to be complete by 2014. The single border
+agency, combining immigration, customs and visa checks, includes a
+{£} 650m contract with consortia Trusted Borders for a
+passenger{}-screening IT system: anyone entering or leaving Britain are
+to give 53 pieces of information in advance of travel. This
+information, taken when a travel ticket is bought, will be shared among
+police, customs, immigration and the security services for at least 24
+hours before a journey is due to take place. Trusted Borders consists
+of US military contractor Raytheon Systems who will work with
+Accenture, Detica, Serco, QinetiQ, Steria, Capgemini, and Daon.
+Ministers are also said to be considering the creation of a list of
+\quote{disruptive} passengers. It is expected to cost travel companies
+{£} 20million a year compiling the information. These costs will
+be passed on to customers via ticket prices, and the Government is
+considering introducing its own charge on travellers to recoup costs. A
+pilot of the e{}-borders technology, known as Project Semaphore, has
+already screened 29 million passengers.
+
+Similarly, the arms manufacturer Lockheed Martin, the biggest defence
+contractor in the U.S., that undertakes intelligence work as well as
+contributing to the Trident programme in the UK, is bidding to run the
+UK 2011 Census. New questions in the 2011 Census will include
+information about income and place of birth, as well as existing
+questions about languages spoken in the household and many other
+personal details. The Canadian Federal Government granted Lockheed
+Martin a \$43.3 million deal to conduct its 2006 Census. Public outcry
+against it resulted in only civil servants handling the actual data,
+and a new government task force being set up to monitor privacy during
+the Census.
+
+\Url{http://censusalert.org.uk/}
+
+\Url{http://www.vivelecanada.ca/staticpages/index.php/20060423184107361}} Our digital
+selves are many dimensional, alert, unforgetting.
+
+Increasingly, these data traces are arrayed and administered in
+networked structures of global reach. It is not necessary to posit a
+totalitarian conspiracy behind this accumulation {--} data mining is an
+exigency of both market efficiency and bureaucratic rationality. Much
+has been written on the surveillance society and the society of
+control, and it is not the object here to construct a general critique
+of data collection, retention and analysis. However, it should be
+recognised that, in the name of efficiency and rationality {--} and, of
+course, security {--} an ever{}-increasing amount of data is being
+shared (also sold, lost and leaked \footnote{{\bf Sales}: \quotation{Personal details of all 44 million adults living in Britain could be
+sold to private companies as part of government attempts to arrest
+spiralling costs for the new national identity card scheme, set to get
+the go{}-ahead this week. [...] ministers have opened talks with
+private firms to pass on personal details of UK citizens for an initial
+cost of {£} 750 each.}
+
+\quotation{Ministers plan to sell your ID card details to raise
+cash}, Francis Elliott, Andy McSmith and Sophie Goodchild, {\em Independent}, Sunday 26 June 2005
+
+\Url{http://www.independent.co.uk/news/uk/politics/ministers-plan-to-sell-your-id-card-details-to-raise-cash-496602.html}
+
+{\bf Losses}: In January 2008, hundreds of documents with passport photocopies, bank
+statements and benefit claims details from the Department of Work and
+Pensions were found on a road near Exeter airport, following their loss
+from a TNT courier vehicle. There were also documents relating to home
+loans and mortgage interest, and details of national insurance numbers,
+addresses and dates of birth.
+
+In November 2007, HM Revenue and Customs (HMRC) posted, unrecorded and
+unregistered via TNT, computer discs containing personal information on
+25 million people from families claiming child benefit, including the
+bank details of parents and the dates of birth and national insurance
+numbers of children. The discs were then lost.
+
+Also in November, HMRC admitted a CD containing the personal details of
+thousands of Standard Life pension holders has gone missing, leaving
+them at heightened risk of identity theft. The CD, which contained data
+relating to 15,000 Standard Life pensions customers including their
+names, National Insurance numbers and pension plan reference numbers
+was lost in transit from the Revenue office in Newcastle to the
+company's headquarters in Edinburgh by \quote{an external courier}.
+
+{\bf Thefts}: In November 2007, MoD acknowledged the theft of a laptop computer
+containing the personal details of 600,000 Royal Navy, Royal Marines,
+and RAF recruits and of people who had expressed interest in joining,
+which contained, among other information, passport, and national
+insurance numbers and bank details.
+
+In October 2007, a laptop holding sensitive information was stolen from
+the boot of an HMRC car. A staff member had been using the PC for a
+routine audit of tax information from several investment firms. HMRC
+refused to comment on how many individuals may be at risk, or how many
+financial institutions have had their data stolen as well. BBC suggest
+the computer held data on around 400 customers with high value
+individual savings accounts (ISAs), at each of five different companies
+{--} including Standard Life and Liontrust. (In May, Standard Life sent
+around 300 policy documents to the wrong people.)}) between the keepers of such
+seemingly unconnected records as medical histories, shopping habits,
+and border crossings. Legal frameworks intended to safeguard a
+conception of privacy by limiting data transfers to appropriate parties
+exist. Such laws, and in particular the UK Data Protection Act (DPA,
+1998) \footnote{The full text of the DPA (1998) is at
+\Url{http://www.opsi.gov.uk/ACTS/acts1998/19980029.htm}}, are the subject of investigation of the film
+{\em Faceless}.
+
+\SubSubTitle{From Act to Manifesto}
+\IndentStyle{\quotation{I wish to apply, under the Data Protection Act, for any and all CCTV
+images of my person held within your system. I was present at [place]
+from approximately [time] onwards on [date].} \footnote{From the template for subject access requests used for {\em Faceless}}}
+
+For several years, ambientTV.NET conducted a series of exercises to
+visualise the data traces that we leave behind, to render them into
+experience and to dramatise them, to watch those who watch us. These
+experiments, scrutinising the boundary between public and private in
+post{}-9/11 daily life, were run under the title \quote{the Spy School}. In
+2002, the Spy School carried out an exercise to test the reach of the
+UK Data Protection Act as it applies to CCTV image data.
+
+\QuoteStyle{The Data Protection Act 1998 seeks to strike a balance between the
+rights of individuals and the sometimes competing interests of those
+with legitimate reasons for using personal information. The DPA gives
+individuals certain rights regarding information held about them. It
+places obligations on those who process information (data controllers)
+while giving rights to those who are the subject of that data (data
+subjects). Personal information covers both facts and opinions about
+the individual. \footnote{Data Protection Act Fact Sheet available from the UK Information
+Commissioners Office, \Url{http://www.ico.gov.uk}}}
+
+The original DPA (1984) was devised to \quote{permit and regulate} access to
+computerised personal data such as health and financial records. A
+later EU directive broadened the scope of data protection and the remit
+of the DPA (1998) extended to cover, amongst other data, CCTV
+recordings. In addition to the DPA, CCTV operators \quote{must} comply with
+other laws related to human rights, privacy, and procedures for
+criminal investigations, as specified in the CCTV Code of Practice
+(\Url{http://www.ico.gov.uk}).
+
+As the first subject access request letters were successful in
+delivering CCTV recordings for the Spy School, it then became pertinent
+to investigate how robust the legal framework was. The Manifesto for
+CCTV Filmmakers was drawn up, permitting the use only of recordings
+obtained under the DPA. Art would be used to probe the law.
+
+\SubSubTitle{A legal readymade}
+
+\QuoteStyle{Vague spectres of menace caught on time{}-coded surveillance cameras
+justify an entire network of peeping vulture lenses. A web of
+indifferent watching devices, sweeping every street, every building, to
+eliminate the possibility of a past tense, the freedom to forget. There
+can be no highlights, no special moments: a discreet tyranny of now has
+been established. Real time in its most pedantic form. \footnote{(Ian Sinclair: {\em Lights out for the territory}, Granta, London, 1998, p. 91)}}
+
+\PlaceImage{luksch8.jpg}{Still from Faceless, 2007}
+\PlaceImage{luksch3.jpg}{Multiple, conflicting timecode stamps}
+{\em Faceless} is a CCTV science fiction fairy tale set in London,
+the city with the greatest density of surveillance cameras on earth.
+The film is made under the constraints of the Manifesto {--} images are
+obtained from existing CCTV systems by the director/protagonist
+exercising her/his rights as a surveilled person under the DPA.
+Obviously the protagonist has to be present in every frame. To comply
+with privacy legislation, CCTV operators are obliged to render other
+people in the recordings unidentifiable {--} typically by erasing their
+faces, hence the faceless world depicted in the film. The scenario of
+{\em Faceless} thus derives from the legal properties of CCTV
+images.
+
+\quotation{RealTime orients the life of every citizen. Eating, resting, going to
+work, getting married {--} every act is tied to RealTime. And every act
+leaves a trace of data {--} a footprint in the snow of noise...} \footnote{{\em Faceless}, 2007}
+
+The film plays in an eerily familiar city, where the reformed RealTime
+calendar has dispensed with the past and the future, freeing citizens
+from guilt and regret, anxiety and fear. Without memory or
+anticipation, faces have become vestigial {--} the population is
+literally faceless. Unimaginable happiness abounds {--} until a woman
+recovers her face...
+
+There was no traditional shooting script: the plot evolved during the
+four{}-year long process of obtaining images. Scenes were planned in
+particular locations, but the CCTV recordings were not always
+obtainable, so the story had to be continually rewritten.
+
+{\em Faceless} treats the CCTV image as an example of a legal
+readymade (\quote{\em{objet trouv\'e}}). The medium, in the sense of raw
+materials that are transformed into artwork, is not adequately
+described as simply video or even captured light. More accurately, the
+medium comprises images that exist contingent on particular social and
+legal circumstances {--} essentially, images with a legal
+superstructure. {\em Faceless} interrogates the laws that govern the
+video surveillance of society and the codes of communication that
+articulate their operation, and in both its mode of coming into being
+and its plot, develops a specific critique.
+
+\SubSubTitle{Reclaiming the data body}
+
+Through putting the DPA into practice and observing the consequences
+over a long exposure, close{}-up, subtle developments of the law were
+made visible and its strengths and lacunae revealed.
+
+\IndentStyle{\quotation{I can confirm there are no such recordings of yourself from that date,
+our recording system was not working at that time.} (11/2003)}
+
+Many data requests had negative outcomes because either the surveillance
+camera, or the recorder, or the entire CCTV system in question was not
+operational. Such a situation constitutes an illegal use of CCTV: the
+law demands that operators: \quotation{comply with the DPA by making sure [...] equipment works properly.} \footnote{CCTV Systems and the Data Protection Act 1998, available from \Url{http://www.ico.gov.uk}}
+
+In some instances, the non{}-functionality of the system was only
+revealed to its operators when a subject access request was made. In
+the case below, the CCTV system had been installed two years prior to
+the request.
+
+\IndentStyle{\quotation{Upon receipt of your letter [...] enclosing the required 10{£}
+fee, I have been sourcing a company who would edit these tapes to
+preserve the privacy of other individuals who had not consented to
+disclosure. [...] I was informed [...] that all tapes on site were
+blank. [.. W]hen the engineer was called he confirmed that the machine
+had not been working since its installation.
+
+Unfortunately there is nothing further that can be done regarding the
+tapes, and I can only apologise for all the inconvenience you have been
+caused.} (11/2003)}
+
+Technical failures on this scale were common. Gross human errors were
+also readily admitted to:
+
+\IndentStyle{\quotation{As I had advised you in my previous letter, a request was made to
+remove the tape and for it not to be destroyed. Unhappily this request
+was not carried out and the tape was wiped according with the standard
+tape retention policy employed by [deleted]. Please accept my apologies
+for this and assurance that steps have been taken to ensure a similar
+mistake does not happen again.} (10/2003)}
+
+Some responses, such as the following, were just mysterious (data
+request made after spending an hour below several cameras installed in
+a train carriage).
+
+\IndentStyle{\quotation{We have carried out a careful review of all relevant tapes and we
+confirm that we have no images of you in our control.} (06/2005)}
+
+Could such a denial simply be an excuse not to comply with the costly
+demands of the DPA? \PlaceImage{luksch4.jpg}{The Rotain Test, devised by the UK Home Office Police Scientific Development Branch, measures surveillance camera performance.}
+
+\IndentStyle{\quotation{Many older cameras deliver image quality so poor that faces are
+unrecognisable. In such cases the operator fails in the obligation to
+run CCTV for the declared purposes.
+
+You will note that yourself and a colleague's faces look quite
+indistinct in the tape, but the picture you sent to us shows you
+wearing a similar fur coat, and our main identification had been made
+through this and your description of the location.} (07/2002)}
+
+To release data on the basis of such weak identification compounds the
+failure.
+
+Much confusion is caused by the obligation to protect the privacy of
+third parties in the images. Several data controllers claimed that this
+relieved them of their duty to release images:
+
+\IndentStyle{\quotation{[... W]e are not able to supply you with the images you requested
+because to do so would involve disclosure of information and images
+relating to other persons who can be identified from the tape and we
+are not in a position to obtain their consent to disclosure of the
+images. Further, it is simply not possible for us to eradicate the
+other images. I would refer you to section 7 of the Data Protection Act
+1998 and in particular Section 7 (4).} (11/2003)}
+
+Even though the section referred to states that it is:
+
+\IndentStyle{\quotation{not to be construed as excusing a data controller from communicating so
+much of the information sought by the request as can be communicated
+without disclosing the identity of the other individual concerned,
+whether by the omission of names or other identifying particulars or
+otherwise.}}
+
+Where video is concerned, anonymisation of third parties is an
+expensive, labour{}-intensive procedure {--} one common technique is to
+occlude each head with a black oval. Data controllers may only charge
+the statutory maximum of 10 {£}
+per request, though not all seemed
+to be aware of this:
+
+\IndentStyle{\quotation{It was our understanding that a charge for production of the tape
+should be borne by the person making the enquiry, of course we will now
+be checking into that for clarification. Meanwhile please accept the
+enclosed video tape with compliments of [deleted], with no charge to
+yourself.} (07/2002)}
+
+Visually provocative and symbolically charged as the occluded heads are,
+they do not necessarily guarantee anonymity. The erasure of a face may
+be insufficient if the third party is known to the person requesting
+images. Only one data controller undeniably (and elegantly) met the
+demands of third party privacy, by masking everything but the data
+subject, who was framed in a keyhole. (This was an uncommented second
+offering; the first tape sent was unprocessed.) One CCTV operator
+discovered a useful loophole in the DPA: 
+\PlaceImage{luksch5.jpg}{Off with their heads!}
+
+\IndentStyle{\quotation{I should point out that we reserve the right, in accordance with
+Section 8(2) of the Data Protection Act, not to provide you with copies
+of the information requested if to do so would take disproportionate
+effort.} (12/2004)}
+
+What counts as \quote{disproportionate effort}? The gold standard was set by
+an institution whose approach was almost baroque {--} they delivered
+hard copies of each of the several hundred relevant frames from the
+time{}-lapse camera, with third parties heads cut out, apparently with
+nail scissors.
+
+Two documents had (accidentally?) slipped in between the printouts {--}
+one a letter from a junior employee tendering her resignation (was it
+connected with the beheading job?), and the other an ironic memo:
+
+\IndentStyle{\quotation{And the good news {--} I enclose the 10 {£}
+fee to be passed to the branch sundry income account.} (Head of Security, internal
+communication 09/2003)}
+
+From 2004, the process of obtaining images became much more difficult.
+
+\IndentStyle{\quotation{It is clear from your letter that you are aware of the provisions of
+the Data Protection Act and that being the case I am sure you are aware
+of the principles in the recent Court of Appeal decision in the case of
+Durant vs. Financial Services Authority. It is my view that the footage
+you have requested is not personal data and therefore [deleted] will
+not be releasing to you the footage which you have requested.} (12/2004)}
+
+Under Common Law, judgements set precedents. The decision in the case
+Durant vs. Financial Service Authority (2003) redefined \quote{personal
+data}; since then, simply featuring in raw video data does not give a
+data subject the right to obtain copies of the recording. Only if
+something of a biographical nature is revealed does the subject retain
+the right.
+
+\IndentStyle{\quotation{Having considered the matter carefully, we do not believe that the
+information we hold has the necessary relevance or proximity to you.
+Accordingly we do not believe that we are obligated to provide you with
+a copy pursuant to the Data Protection Act 1988. In particular, we
+would remark that the video is not biographical of you in any
+significant way.} (11/2004)}
+
+Further, with the introduction of cameras that pan and zoom, being
+filmed as part of a crowd by a static camera is no longer grounds for a
+data request.
+
+\IndentStyle{\quotation{[T]he Information Commissioners office has indicated that this would
+not constitute your personal data as the system has been set up to
+monitor the area and not one individual.} (09/2005)}
+
+As awareness of the importance of data rights grows, so the actual
+provision of those rights diminishes:
+
+\IndentStyle{"I draw your attention to CCTV systems and the Data Protection Act 1998
+(DPA) Guidance Note on when the Act applies. Under the guidance notes
+our CCTV system is no longer covered by the DPA [because] we:
+
+\startitemize[packed]
+\item only have a couple of cameras 
+\item cannot move them remotely 
+\item just record on video whatever the cameras pick up 
+\item only give the recorded images to the police to investigate an
+incident on our premises"
+\stopitemize
+(05/2004)}
+
+Data retention periods (which data controllers define themselves) also
+constitute a hazard to the CCTV filmmaker:
+
+\IndentStyle{\quotation{Thank you for your letter dated 9 November addressed to
+our Newcastle store, who have passed it to me for reply.
+Unfortunately, your letter was delayed in the post to me and only
+received this week. [...] There was nothing on the tapes that you
+requested that caused the store to retain the tape beyond the normal
+retention period and therefore CCTV footage from 28 October and 2
+November is no longer available.} (12/2004)}
+
+\PlaceImage{luksch0.jpg}{Still from Faceless, 2007}
+Amidst this sorry litany of malfunctioning equipment, erased tapes, lost
+letters and sheer evasiveness, one CCTV operator did produce reasonable
+justification for not being able to deliver images:
+
+\IndentStyle{\quotation{We are not in a position to advise whether or not we collected any
+images of you at [deleted]. The tapes for the requested period at
+[deleted] had been passed to the police before your request was
+received in order to assist their investigations into various
+activities at [deleted] during the carnival.} (10/2003)}
+
+\SubSubTitle{In the shadow of the shadow}
+
+\PlaceImage{luksch6.jpg}{Still from Faceless, 2007} 
+There is debate about the efficacy, value for money, quality of
+implementation, political legitimacy, and cultural impact of CCTV
+systems in the UK. While CCTV has been presented as being vital in
+solving some high profile cases (e.g. the 1999 London nail bomber, or
+the 1993 murder of James Bulger), at other times it has been strangely,
+publicly, impotent (e.g. the 2005 police killing of Jean Charles de
+Menezes). The prime promulgators of CCTV may have lost some faith:
+during the 1990s the UK Home Office spent 78\% of its crime prevention
+budget on installing CCTV, but in 2005, an evaluation report by the
+same office concluded that, \quotation{the CCTV schemes that have been assessed
+had little overall effect on crime levels.} \footnote{Gill, M. and Spriggs, A., {\em Assessing the impact of CCTV}.
+London: Home Office Research, Development and Statistics Directorate 2005, pp.60{}-61. www.homeoffice.gov.uk/rds/pdfs05/hors292.pdf}
+
+An earlier, 1992, evaluation reported CCTV's broadly positive public
+reception due to its assumed effectiveness in crime control,
+acknowledging \quotation{public acceptance is based on limited and partly
+inaccurate knowledge of the functions and capabilities of CCTV systems
+in public places.} \footnote{\Url{http://www.homeoffice.gov.uk/rds/prgpdfs/fcpu35.pdf}}
+
+By the 2005 assessment, support for CCTV still \quotation{remained high in the
+majority of cases} but public support was seen to decrease after
+implementation by as much as 20\%. This \quotation{was found not to be the
+reflection of increased concern about privacy and civil liberties, as
+this remained at a low rate following the installation of the cameras,}
+but \quotation{that support for CCTV was reduced because the public became more
+realistic about its capabilities} to lower crime.
+
+Concerns, however, have begun to be voiced about function creep and the
+rising costs of such systems, prompted, for example, by the disclosure
+that the cameras policing London's Congestion Charge remain switched on
+outside charging hours and that the Met are to have live access to
+them, having been exempted from parts of the Data Protection Act to do
+so. \footnote{Surveillance State Function Creep {--} London Congestion Charge
+\quotation{real{}-time bulk data} to be automatically handed over to the
+Metropolitan Police etc. \Url{http://p10.hostingprod.com/@spyblog.org.uk/blog/2007/07/surveillance_state_function_creep_london_congestion_charge_realtime_bulk_data.html}} As such realities of CCTV's daily operation become more widely
+known, existing acceptance may be somewhat tempered.
+
+Physical bodies leave data traces: shadows of presence, conversation,
+movement. Networked databases incorporate these traces into data
+bodies, whose behaviour and risk are priorities for analysis and
+commodification, by business and by government. The securing of a data
+body is supposedly necessary to secure the human body, either
+preventatively or as a forensic tool. But if the former cannot be
+assured, as is the case, what grounds are there for trust in the hollow
+promise of the latter? The all{}-seeing eye of the panopticon is not
+complete, yet. Regardless, could its one{}-way gaze ever assure an
+enabling conception of security?
+}

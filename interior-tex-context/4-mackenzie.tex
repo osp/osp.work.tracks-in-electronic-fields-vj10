@@ -1,0 +1,710 @@
+\PlaceImage{mackenzie02.JPG}{Adrian Mackenzie at V/J10}
+
+\AuthorStyle{Adrian Mackenzie}
+
+\licenseStyle{Creative Commons Attribution{}-NonCommercial{}-ShareAlike}
+
+\Flag{EN}\Title{Centres of envelopment and intensive movement in digital signal processing}
+
+\SubSubTitle{Abstract}
+
+{\em The paper broadly concerns algorithmic processes commonly found in
+wireless networks, video and audio compression. The problem it
+addresses is how to account for the convoluted nature of the digital
+signal processing (DSP). Why is signal processing so complex and
+relatively inaccessible? The paper argues that we can only understand
+what is at stake in these labyrinthine calculations by switching focus
+away from abstract understandings of calculation to the dynamic
+re{}-configuration of space and movement occurring in signal
+processing. The paper works through one example in detail of this
+reconfigured movement in order to illustrate how digital signal
+processing enables different experiences of proximity, intimacy,
+co{}-location and distance. It explores how wireless signal processing
+algorithms envelope heterogeneous spaces in the form of hidden states,
+and logistical networks. Importantly, it suggests that the ongoing
+dynamism of signal processing could be understood in terms of intensive
+movement produced by a centre of envelopment. Centres of envelopment
+generate extensive changes, but they also change the nature of change
+itself.}
+
+\SubSubTitle{From sets to signals: digital signal processing}
+
+In new media art, in new media theory and in various forms of media
+activism, there has been so much work that seizes on the possibilities
+of using digital technologies to design interactions, sound, image,
+text, and movement that challenge dominant forms of experience, habit
+and selfhood. In various ways, the processes of branding,
+commodification, consumption, control and surveillance associated with
+contemporary media have been critically interrogated and challenged. 
+
+However, there are some domains of contemporary technological and media
+culture that are really hard to work with. They may be incredibly
+important, they may be an intimate part of everyday life, yet remain
+relatively intractable. They resist contestation, and engagement with
+may even seem pointless. This is because they may contain intractable
+materials, or be organised in such complicated ways that they are hard
+to change. 
+
+This paper concerns one such domain, digital signal processing (DSP). I am not saying that new media has not engaged with DSP. Of course it
+has, especially in video art and sound art, but there is little work
+that helps us make sense of how the sensations, textures, and movements
+associated with DSP come to be taken for granted, come to appear as
+normal, and everyday, or how they could be contested. 
+
+\PlaceImage{mackenzie4.png}{A promotional video from Intel for the UltraMobilePC}
+
+A promotional video from Intel for the UltraMobilePC \footnote{\Url{http://youtube.com/watch?v=GFS2TiK3AI}}
+promotes change in relation to mobile media. Intel, because it makes semiconductors, is highly invested in digital signal processing in
+various forms. In any case, video itself is a prime example of
+contemporary DSP at work. Two aspects of this promotional video for the
+UMPC, the UltraMobile PC, relate to digital signal processing. There is
+much signal processing here. It connects the
+individual's eyes, mouths and ears to screens that
+display information services of various kinds. There is also much
+signal processing in the wireless network infrastructures that connect
+all these gadgets to each other and to various information services
+(maps, calendars, news feeds). In just this example, sound, video,
+speech recognition, fibre, wireless and satellite, imaging technologies
+in medicine all rely on DSP. We could say a good portion of our
+experience is DSP{}-based.
+
+This paper is an attempt to develop a theory of digital signal
+processing, a theory that could be used to talk about ways of
+contesting, critiquing, or making alternatives. The theory under
+development here relies a lot on two notions, \quote{intensive movement} and
+\quote{centre of envelopment} that Deleuze proposed in {\em Difference and
+Repetition.} However, I want to keep the philosophy in the background
+as much as possible. I basically want to argue that we need to ask: why
+does so much have to be enveloped or interiorised in wireless or
+audiovisual DSP? 
+
+\SubSubTitle{How does DSP differ from other algorithmic processes?}
+
+What can we say about DSP? Firstly, influenced by recent software
+studies{}-based approaches (Fuller, Chun, Galloway, Manovich), I think
+it is worth comparing the kinds of algorithmic processes that take
+place in DSP with those found in new media more generally. Although it
+is an incredibly broad generalisation, I think it is safe to say that
+DSP does not belong to the {\em set{}-based} algorithms and
+data{}-structures that form the basis of much interest in new media
+interactivity or design.
+
+DSP differs from set{}-based code. If we think of social software such
+as Flickr, Google, or Amazon, if we think of basic information
+infrastructures such as relational databases or networks, if we think
+of communication protocols or search engines, all of these systems rely
+on listing, enumerating, and sorting data. The practices of listing,
+indexing, addressing, enumerating and sorting, all concern
+{\em sets}. Understood in a fairly abstract way, this is what much
+software and code does: it makes and changes sets. Even areas that
+might seem quite remote from set{}-making, such as the 3D{}-projective
+geometry used in computer game graphics are often reduced
+algorithmically to complicated set{}-theoretical operations on shapes
+(polygons). Even many graphic forms are created and manipulated using
+set operations. 
+
+The elementary constructs of most programming languages reflect this
+interest in set{}-making. For instance, networks or, in computer
+science terms, {\em graphs}, are visually represented like using
+lines and boxes. But in terms of code, they are presented as either
+edge or \quote{adjacency lists}, like this: \footnote{\Url{http://www.python.org/doc/essays/graphs/}}
+
+
+\starttyping
+graph = {'A': ['B', 'C'],
+         'B': ['C', 'D'],
+         'C': ['D'],
+         'D': ['C'],
+         'E': ['F'],
+         'F': ['C']}
+\stoptyping
+
+A graph or network can be seen as a list of lists. This kind of
+representation in code of relations is very neat and nice. It means
+that something like the structure of the internet, as a hybrid of
+physical and logical relations, can be recorded, stored, sorted and
+re{}-ordered in code. Importantly, it is highly open to modification
+and change. Social software, or Web2.0, as exemplified in websites like
+Facebook or YouTube also can be understood as massive deployments of
+set theory in the form of code. Their sociality is very much dependent
+on set making and set changing operations, both in the composition of
+the user interfaces and in the underlying databases that make
+constantly seek to attach new relations to data, to link identities and
+attributes. In terms of activism, and artwork, relations that can be
+expressed in the form of sets and operations on sets, are highly
+manipulable. They can be learned relatively easily, and they are not
+too difficult to work with. For instance, scripts that crawl or scrape
+websites have been widely used in new media art and activism.
+
+By contrast, DSP code is not based on set{}-making. It relies on a
+different ordering of the world that lies closer to streams of signals
+that come from systems such as sensors, transducers, cameras, and that
+propagate via radio or cable. Indeed, although it is very widely used,
+DSP is not usually taught as part of the computer science or software
+engineering. The textbooks in these areas often do not mention DSP. The
+distinction between DSP and other forms of computation is clearly
+defined in a textbook of DSP:
+
+\QuoteStyle{Digital Signal Processing is distinguished from other areas in computer
+science by the unique type of data it uses: {\em signals}. In most
+cases, these signals originate as sensory data from the real world:
+seismic vibrations, visual images, sound waves, etc. DSP is the
+mathematics, the algorithms, and the techniques used to manipulate
+these signals after they have been converted into a digital form. {\em (Smith, 2004)}}
+
+While it draws on some of the logical and set{}-based operations found
+in code in general, DSP code deals with signals that usually involve
+some kind of sensory data {--} vibrations, waves, electromagnetic
+radiation, etc. These signals often involve forms of rapid movement,
+rhythms, patterns or fluctuations. Sometimes these movements are
+embodied in physical senses, such as the movements of air involved in
+hearing, or the flux of light involved in seeing. Because they are
+often irregular movements, they cannot be easily captured in the forms
+of movement idealised in classical mechanics {--} translation,
+rotation, etc. Think for instance of a typical photograph of a city
+street. Although there are some regular geometrical forms, the way in
+which light is reflected, the way shadows form, is very difficult to
+describe geometrically. It is much easier, as we will see, to think of
+an image as a signal that distributes light and colour in space. Once
+an image or sound can be seen as a signal, it can undergo digital
+signal processing. 
+
+What distinguishes DSP from other algorithmic processes is its reliance
+on {\em transforms} rather than functions. This is a key difference.
+The \quote{transform} deals with many values at once. This is important
+because it means it can deal with things that are temporal or spatial,
+such as sounds, images, or signals in short. This brings algorithms
+much closer to sensation, and to what bodies feel. While there is
+codification going on, since the signal has to be treated digitally as
+discrete numerical values, it is less reducible to the sequence of
+steps or operations that characterise set{}-theoretical coding. Here
+for instance is an important section of the code used in MPEG video
+encoding in the free software ffmpeg package:
+
+\PlaceImage{mackenzie01.JPG}{The simplest mpeg encoder}
+\starttyping
+**
+* @file mpegvideo.c
+* The simplest mpeg encoder (well, it was the simplest!).
+*
+
+...
+
+* for jpeg fast DCT */
+
+#define CONST_BITS 14
+static const uint16_t aanscales[64] = {
+    /* precomputed values scaled up by 14 bits */
+    16384, 22725, 21407, 19266, 16384, 12873, 8867, 4520,
+    22725, 31521, 29692, 26722, 22725, 17855, 12299, 6270,
+    21407, 29692, 27969, 25172, 21407, 16819, 11585, 5906,
+    19266, 26722, 25172, 22654, 19266, 15137, 10426, 5315,
+    16384, 22725, 21407, 19266, 16384, 12873, 8867, 4520,
+    12873, 17855, 16819, 15137, 12873, 10114, 6967, 3552,
+    8867, 12299, 11585, 10426, 8867, 6967, 4799, 2446,
+    4520, 6270, 5906, 5315, 4520, 3552, 2446, 1247
+};
+
+...
+
+for(i=0;i<64;i++) {
+           const int j=
+dsp{}->}idct_permutation[i];
+           qmat[qscale][i] = (int)((uint64_t_C(1)
+<< (QMAT_SHIFT + 14))
+                      (aanscales[i]
+* qscale * quant_matrix[j]));
+\stoptyping
+
+
+I don't think we need to understand this code in detail. There is only
+one thing I want to point out in this code: the list of \quote{precomputed}
+numerical values is used for \quote{jpeg fast DCT}. This is a typical piece
+of DSP type code. It refers to the way in which video frames are
+encoding using Fast Fourier Transforms. The key point here is that
+these values have been carefully worked out in advance to scale
+different colour and luminosity components of the image differently.
+The transform, DCT (Discrete Cosine Transform), is applied to chunks of
+sensation {--} video frames {--} to make them into something that can
+be manipulated, stored, changed in size or shape, and circulated.
+Notice that the code here is quite opaque in comparison to the graph
+data structures discussed previously. This opacity reflects the sheer
+number of operations that have to be compressed into code in order for
+digital signal processing to work.
+
+\SubSubTitle{Working with DSP: architecture and geography}
+
+So we can perhaps see from the two code examples above that there is
+something different about DSP in comparison to the set{}-based
+processing. DSP seems highly numerical and quantified, while the
+set{}-based code is symbolic and logical. What is at stake in this
+difference? I would argue that it is something coming into the code
+from outside, something that is difficult to read in the code itself
+because it is so opaque and convoluted. Why is DSP code hard to
+understand and also hard to write? 
+
+You will remember that I said at the outset that there are some facets
+of technological cultures that resist appropriation or intervention. I
+think the mathematics of DSP is one of those facets. If I just started
+explaining some of the mathematical models that have been built into
+the contemporary world, I think it would be shoring up or reinforcing a
+certain resistance to change associated with DSP, at least in its main
+mathematical formalisations. I do think the mathematical models are
+worth engaging with, partly because they look so different from the
+set{}-based operations found in much code today. The mathematical
+models can tell us why DSP is difficult to intervene in at a low level.
+
+However, I don't think it is the mathematics as such that makes digital
+signal processing hard to grapple with. The mathematics is an
+{\em architectural} response to a {\em geographical} problem, a
+problem of where code can go and be in the world. I would argue that it
+is the relation between the {\em architecture} and {\em geography
+}of digital signal processing itself that we should grapple with. It is
+something to do about the immersion in everyday life, the proximity to
+sensation, the shifting multi{}-sensory patterning of sociality, the
+movements of bodies across variable distances, and the effervescent
+sense of impending change that animates the convoluted architecture of
+DSP.
+
+We could think of the situations in which DSP is commonly found. For
+instance, in the background of the scenes in the daily lives of
+businessmen shown in Intel's UPMC video, lie wireless infrastructures
+and networks. Audiovisual media and wireless networks both use signal
+processing, but for different reasons. Although they seem quite
+disparate from each other in terms of how we embody them, they actually
+sometimes use the same DSP algorithms. (In other work, I have discussed
+video codecs.\footnote{{\bf The case of video codecs}
+
+In the foreground of the UMPC vision, stand
+images, video images in particular, and to a lesser extent, sounds.
+They form a congested mass, created by media and information networks.
+People in electronic media cultures constantly encounter images in
+circulation. Millions of images flash across TV, cinema and computer
+screens. DVD's shower down on us. The internet is loaded down with
+video at the moment (Google Video, YouTube.com, Yahoo video, etc.). A
+powerful media{}-technological imagining of video moving everywhere,
+every which way, has taken root. \par The growth of video material
+culture is associated with a key dynamic: the proliferation of software
+and hardware {\em codecs.} Codecs generate linear
+transforms of images and sound. Transformed images move through
+communication networks much more quickly than uncompressed audiovisual
+materials. Without codecs, an hour of raw digital video would need 165
+CD{}-ROMs or take roughly 24 hours to move across a standard computer
+network (10Mbit/sec ethernet). Instead of 165 CDs, we take a single DVD
+on which a film has been encoded by a codec. We play it on a DVD player
+that also has a codec, usually implemented in hardware. Instead of
+32Mbyte/sec, between 1{}-10 MByte/sec streams from the DVD into the
+player and then onto the television screen. \par
+The economic and technical value of codecs can hardly
+be overstated. DVD, the transmission formats for satellite and cable
+digital television (DVB and ATSC), HDTV as well as many internet
+streaming formats such as RealMedia and Windows Media, third generation
+mobile phones and voice{}-over{}-ip (VoIP), all depend on video and
+audio codecs. They form a primary technical component of contemporary
+audiovisual culture. \par Physically, codecs take many forms, in
+software and hardware. Today, codecs nestle in set{}-top boxes, mobile
+phones, video cameras and webcams, personal computers, media players
+and other gizmos. Codecs perform encoding and decoding on a digital
+data stream or signal, mainly in the interest of finding what is
+different in a signal and what is mere repetition. They scale, reorder,
+decompose and reconstitute perceptible images and sounds. They only
+move the differences that matter through information networks and
+electronic media. This performance of difference and repetition of
+video comes at a cost. Enormous complication must be compressed in the
+codec itself.\par Much is at stake in this logistics from the
+perspective of cultural studies of technology and media. On the one
+hand, codecs analyse, compress and transmit images that fascinate,
+bore, fixate, horrify and entertain billions of spectators. Many of
+these videos are repetitive or clich\'ed. There are many re{}-runs of
+old television series or Hollywood classics. YouTube.com, a video
+upload site, offers 13,500 wedding videos. Yet the spatio{}-temporal
+dynamics of these images matters deeply. They open new patterns of
+circulation. To understand that circulation matters deeply, we could
+think of something we don't want to see, for instance, the execution of
+many hostages (Daniel Perl, Nick Berg, and others) in Jihadist videos
+since 2002. Islamist and \quote{shock{}-site} web servers streamed these
+videos across the internet using the low{}-bitrate Windows Media Video
+codec, a proprietary variant of the industry{}-standard MPEG{}-4. The
+shock of such events {--} the sight of a beheading, the sight of a
+journalist pleading for her life {--} depends on its circulation
+through online and broadcast media. A video beheading lies at the outer
+limit of the ordinary visual pleasures and excitations attached to
+video cultures. Would that beheading, a corporeal event that takes
+video material culture to its limits, occur without codecs and
+networked media?}
+
+While images are visible, wireless signals are
+relatively hard to sense. So they are a \quote{hard case} to analyse. We know
+they surround us, but we hardly have any sensation of them. A tightly
+packed labyrinth of digital signal processing lies between antenna and
+what reaches the business travellers' eyes and ears. Much of what they
+look at and listen has passed through wireless chipsets. The chipsets,
+produced by Broadcom, Intel, Texas Instruments, Motorola, Airgo or
+Pico, are tiny (1 cm) fragments that
+support highly convoluted and concatenated paths on nanometre scales.
+In wireless networks such as Wi{}-Fi, Bluetooth, and 3G mobile phones
+with their billions of miniaturised chipsets, we encounter a vast
+proliferation of relations. What is at stake in these convoluted,
+compressed packages of relationality, these densely patterned
+architectures dedicated to wireless communication? 
+
+Take for instance the picoChip, a latest{}-generation wireless digital
+signal processing chip, designed by a \quote{fabless} semiconductor company,
+picoChip Designs Ltd, in Bath, UK. The product brief describes the chip
+as:
+
+\QuoteStyle{[t]he architecture of choice for next{}-generation wireless. Expressly
+designed to address the new air{}-interfaces, picoChip's multi{}-core
+DSP is the most powerful baseband processor on the market. Ideally
+suited to WiMAX, HSPA, UMTS{}-LTE, 802.16m, 802.20 and others, the
+picoArray delivers ten{}-times better MIPS/\$ than legacy approaches.
+Crucially, the picoArray is easy to program, with a robust development
+environment and fast learning curve. {\em (PicoChip, 2007)}} 
+
+Written for electronics engineers, the key points here are that the chip
+is designed for wireless communication or \quote{air{}-interface}, that its
+purpose is to receive and transmit information wirelessly, and that it
+accommodates a variety of wireless communication standards (WiMAX,
+HSPA, 802.16m, etc). In this context, much of the terminology of
+performance and low cost is familiar. The chip combines computing
+performance and value for money (\quotation{ten times better MIPS/\$ {--}
+Million Instructions Per Second/\$}) as a \quote{baseband processor}. That
+means that it could find its way into many different version of
+hardware being produced for applications that range between
+large{}-scale wireless information infrastructures and small consumer
+electronics applications. Only the last point is slightly surprisingly
+emphatic: \quotation{[c]rucially, the picoArray is easy to program, with a robust
+development environment and fast learning curve.} Why should ease of
+programming be important?
+
+\SubSubTitle{And why should so many processors be needed for
+wireless signal processing?} 
+
+The architecture of the picoChip stands on shifting ground. We are
+witnessing, as Nigel Thrift writes, \quotation{a major change in the geography of
+calculation. Whereas \quote{computing} used to consist of {\em centres
+of calculation} located at definite sites, now, through the medium of
+wireless, it is changing its shape} (Thrift, 2004, 182). The
+picoChip's architecture is a respond to the changing
+geographies of calculation. Calculation is not carried out at definite
+sites, but at almost any site. We can see the picoChip as an {\em 
+architectural} response to the changing {\em geography} of
+computing. The architecture of the picoChip is typical in the ways that
+it seeks to make a constant re{}-shaping of computation possible,
+normal, affordable, accessible and programmable. This is particularly
+evident in the parallel character of its architecture. Digital signal
+processing requires massive parallellisation: more chips everywhere,
+and chips that do more in parallel. The advanced architecture of the
+picoChip is typical of the shape of things more generally: 
+
+\QuoteStyle{[t]he picoArray{\trademark} is a tiled processor architecture in
+which hundreds of processors are connected together using a
+deterministic interconnect. The level of parallelism is relatively fine
+grained with each processor having a small amount of local memory. ...
+Multiple picoArrayTM devices may be connected together to form systems
+containing thousands of processors using on{}-chip peripherals which
+effectively extend the on{}-chip bus structure. {\em (Panesar, et al.,
+2006, 324)}}
+
+\PlaceImage{mackenzie5.jpg}{Typical contemporary wireless infrastructure DSP chip architecture PicoChip202}
+
+The array of processors shown then, is a partial representation, an armature for a much more extensive diffusion of
+processors in wireless digital signal processing: in wireless base
+stations, 3G phones, mobile computing, local area networks, municipal,
+community and domestic Wi{}-Fi network, in femtocells, picocells, in
+backhaul, last{}-mile or first mile infrastructures.
+
+\SubSubTitle{Architectures and intensive movement}
+
+It is as if the picoChip is a miniaturised version of the urban
+geography that contains the many gadgets, devices, and wireless and
+wired infrastructures. However, this proliferation of processors is
+more than a diffusion of the same. The interconnection between these
+arrays of processors is not just extensive, as if space were blanketed
+by an ever finer and wider grid of points occupied by processors at
+work shaping signals. As we will see, the interconnection between
+processors in DSP seeks to potentialise an {\em intensive movement}.
+It tries to accommodate a change in the nature of movement. Since all
+movement is change, intensive movement is a change in change. When
+intensive movement occurs, there is always a change in kind, a
+qualitative change.
+
+
+Intensive movements always respond to a relational problem. The crux of
+the relational problem of wirelessness is this: how can many things
+(signals, messages, flows of information) occupy the same space at the
+same time, yet all be individualised and separate? The flow of
+information and messages promises something highly individualised (we
+saw this in the UMPC video from Intel). In terms of this
+individualising change, the movement of images, messages and data, and
+the movement of people, have become linked in very specific ways today.
+The greater the degree of individualization, the more dense becomes the
+mobility of people and the signals they transmit and receive. And as
+people mobilise, they drag personalised flows of communication on the
+move with them. Hence flows of information multiply massively, and
+networks must proliferate around those flows. The networks need to
+become more dense, and imbricate lived spaces more closely in response
+to individual mobility. 
+
+This poses many problems for the architecture of communication
+infrastructure. The infrastructural problems of putting networks
+everywhere are increasingly, albeit only partially, solved by packing
+radio{}-frequency waves with more and more intricately modulated signal
+patterns. This is the core response of DSP to the changing geography of
+calculation, and to the changing media embodiments associated with it.
+To be clear on this: were it not for digital signal processing, the
+problems of interference, of unrelated communications mixing together,
+would be potentially insoluble. The very possibility of mobile devices
+and mobility depends on ways of increasing the sheer density of
+wireless transmissions. Radio spectrum becomes an increasingly
+valuable, tightly controlled resource. For any one individual
+communication, not much space or time can be available. And even when
+there is space, it may be noisy and packed with other people and things
+trying to communicate. Different kinds of wireless signals are
+constantly added to the mix. Signals may have to work their way through
+crowds of other signals to reach a desired receiver. Communication does
+not take place in open, uncluttered space. It takes place in messy
+configurations of buildings, things and people, which obstruct waves
+and bounce signals around. The same signal may be received many times
+through different echoes (\quote{multipath echo}). Because of the presence of
+crowds of other signals, and the limited spectrum available for any one
+transmission, wirelessness needs to be very careful in its selection of
+paths if experience is to stream rather than just buzz. The problem for
+wireless communication is to micro{}-differentiate many paths and to
+allow them to interweave and entwine with each other without coming
+into relation.
+
+So the changing architectures of code and computation associated with
+DSP in wireless networks does more, I would argue, than fit in with
+changing geography of computing. It belongs to a more intensive,
+enveloped, and enveloping set of movements. To begin addressing this
+dynamic, we might say that wireless DSP is the armature of a
+{\em centre of envelopment.} This is a concept that Gilles Deleuze
+proposes late in {\em Difference and Repetition}.{\em } \quote{Centres
+of envelopment} are a way of understanding how extensive movements
+arise from intensive movement. Such centres crop up in \quote{complex
+systems} when differences come into relation: 
+
+\QuoteStyle{to the extent that every phenomenon finds its reason in a difference of
+intensity which frames it, as though this constituted the boundaries
+between which it flashes, we claim that complex systems increasingly
+tend to interiorise their constitutive differences: the centres of
+envelopment carry out this interiorisation of the individuating
+factors. {\em (Deleuze, 2001, 256)}}
+
+Much of what I have been describing as the intensive movement that folds
+spaces and times inside DSP can be understood in terms of an
+interiorisation of constitutive differences. An intensive movement
+always entails a change in the nature of change. In this case, a
+difference in intensity arises when many signals need to co{}-habit
+that same place and moment. The problem is: how can many signals move
+simultaneously without colliding, without interfering with each other?
+How can many signals pass by each other without needing more space?
+These problems induce the compression and folding of spaces inside
+wireless processing, the folding that we might understand as a \quote{centre
+of envelopment} in action.
+
+\SubSubTitle{The Fast Fourier Transform: transformations between time and
+space}
+
+I have been arguing that the complications of the mathematics and the
+convoluted nature of the code or hardware used in DSP, stems from an
+intensive movement or constitutive difference that is interiorised. We
+can trace this interiorisation in the DSP used in wireless networks. I
+do not have time to show how this happens in detail, but hopefully one
+example of DSP that occurs but in the video codecs and wireless
+networks will illustrate how this happens in practice. 
+
+Late in the encoding process, and much earlier in the decoding process
+in contemporary wireless networks, a fairly generic computational
+algorithm comes into action: the Fast Fourier Transform (FFT). In some
+ways, it is not surprising to find the FFT in wireless networks or in
+digital video. Dating from the mid{}-1960s, FFTs have long been used to
+analyse electrical signals in many scientific and engineering settings.
+It provides the component frequencies of a time{}-varying signal or
+waveform. Hence, in \quote{spectral analysis}, the FFT can show the spectrum
+of frequencies present in a signal. 
+
+The notion of the Fourier transform is mathematical and has been known
+since the early 19th century: it is an operation that
+takes an arbitrary waveform and turns it into a set of periodic waves
+(sinusoids) of different frequencies and amplitudes. Some of these
+sinusoids make more important contributions to overall shape of the
+waveform than others. Added together again, these sine or cosine waves
+should exactly re{}-constitute the original signal. Crucially, a
+Fourier transform can turn something that varies over time (a signal)
+into a set of simple components (sine or cosine waves) that do not vary
+over time. Put more technically, it switches between \quote{time} and
+\quote{frequency} domains. Something that changes in time, a signal, becomes
+a set of distinct components that can be handled
+separately.\footnote{Humanities and social science work on the
+Fast Fourier Transform is hard to find, even though the FFT is the
+common mathematical basis of contemporary digital image, video and
+sound compression, and hence of many digital multimedia (in JPEG, MPEG
+files, in DVDs). In the early 1990s, Friedrich Kittler wrote an article
+that discussed it \{Kittler, 1993 \#753\}. His key point was largely to
+show that there is no realtime in digital signal processing. The FFT
+works by defining a sliding window of time for a signal. It treats a
+complicated signal as a set of blocks that it lifts out of the time
+domain and transforms into the frequency domain. The FFT effectively
+plots an event in time as a graph in space. The experience of realtime
+is epiphenomenal. In terms of the FFT, a signal is always partly in the
+future or the past. Although Kittler was not referring to the use of
+FFT in wireless networks, the same point applies {--} there is no
+realtime communication. However, while this point about the
+impossibility of realtime calculation was important to make during the
+1990s, it seems well{}-established now.}
+
+In a way, this analysis of a
+complex signal into simple static component signals means that DSP does
+use the set{}-based approaches I described earlier. Once a complex
+signal, such as an image, has been analysed into a set of static
+components, we can imagine code that would select the most important or
+relevant components. This is precisely what happens in video and sound
+codecs such as MPEG and MP3.
+
+The FFT treats sounds and images as complicated superimpositions of
+waveforms. The envelope of a signal becomes something that contains
+many simple signals. It is interesting that wireless networks tend to
+use this process in reverse. It deliberately takes a well{}-separated
+and discrete set of signals {--} a digital datastream {--} and turns it
+into a single complex signal. In contrast to the normal uses of FFT in
+separating important from insignificant parts of a signal, in wireless
+networks, and in many other communications setting, FFT is used to put
+signals together in such a way as to contain them in a single envelope.
+The FFT is found in many wireless computation algorithms because it
+allows many different digital signals to be put together on a single
+wave and then extracted from it again. 
+
+Why would this superimposition of many signals onto a single complex
+waveform be desirable? Would it not increase the possibilities of
+confusion or interference between signals? In some ways the FFT is used
+to slow everything down rather than speed it up. Rather than simply
+spatialising a duration, the FFT as used in wireless networks defines a
+different way of inhabiting the crowded, noise space of electromagnetic
+radiation. Wireless transmitters are better at inhabiting crowded
+signal spectrum when they don't try to separate
+themselves off from each other, but actually take the presence of other
+transmitters into account. How does the FFT allow many transmitters to
+inhabit the same spectrum, and even use the same frequencies?
+
+The name of this technique is OFDM (Orthogonal Frequency Division
+Multiplexing). OFDM spreads a single data stream coming from a single
+device across a large number of sub{}-carriers signals (52 in IEEE
+802.11a/g). It splits the data stream into dozens of separate signals
+of slightly different frequency that together evenly use the whole
+available radio spectrum. This is done in such a way that many
+different transmitters can be transmitting at the same time, on the
+same frequency, without interfering with each other. The advantage of
+spreading a single high speed data stream across many signals
+({\quote wideband}) is that each individual
+signal can carry data at a much slower rate. Because the data is split
+into 52 different signals, each signal can be much slower (1/50). That
+means each bit of data can be spaced apart more in time. This has great
+advances in urban environments where there are many obstacles to
+signals, and signals can reflect and echo often. In this context, the
+slower the data is transmitted, the better.
+
+At the transmitter, a reverse FFT (IFFT) is used to re{}-combine the 50
+signals onto 1 signal. That is, it takes the 50 or so different
+sub{}-carriers produced by OFDM, each of which has a single slightly
+different, but carefully chosen frequency, and combines them into one
+complex signal that has a wide spectrum. That is, it fills the
+available spectrum quite evenly because it contains many different
+frequency components. The waveform that results from the IFFT looks
+like 'white noise': it has no
+remarkable or outstanding tendency whatsoever, {\em except} to a receiver synchronised to exactly the right carrier frequency. At the receiver, this complex signal is transformed, using \ FFT, back
+into a set of 50 separate data streams, that are then reconstituted
+into a single high speed stream. 
+
+Even if we cannot come to grips with the techniques of transformation
+using in DSP in any great detail, I hope that one point stands out. The
+transformation involves {\quote changes in
+kind}. Data does not simply move through space. It
+changes in kind in order to move through space, a space whose geography
+is understood as too full of potential relations.
+
+\SubSubTitle{Conclusion}
+
+A couple of points in conclusion:
+
+\startitemize[a]
+\item The spectrum of different wireless{}-audiovisual devices competing
+to do more or less the same thing, are all a {\em reproduction of
+the same}. Extensive movement associated with wireless networks and
+digital video occur in various forms. Firstly in the constant
+enveloping of spaces by wireless signals, and secondly in the dense
+population of wireless spectrum by competing, overlapping signals,
+vying for market share in highly visible, well{}-advertised campaigns
+to dominate spectrum while at the same time allowing for the presence
+of many others. 
+\item Actually, in various ways, wirelessness puts the very primacy of
+extension as space{}-making in question. Signals seem to be able to
+occupy the same space at the same time, something that should not
+happen in space as usually understood. We can understand this by
+re{}-conceptualising movement as intensive. Intensive movement occurs
+in multiple ways. Here I have emphasised the constant folding inwards
+or {\em interiorisation of heterogeneous movements} via
+algorithms used in digital signal processing. Intensive movement ensues
+occurs when a centre of envelopment begins to interiorise differences.
+While these interiorised spaces are computationally intensive (as
+exemplified by the picoChip's massive processing
+power), the spaces they generate are not perceived as calculated,
+precise or rigid. Wirelessness is a relatively invisible, messy,
+amorphous, shifting sets of depths and distances that lacks the visible
+form and organisation of other entities produced by centres of
+calculation (for instance, the shape of a CAD{}-designed building or
+car). However, similar processes occur around sound and images through
+DSP. In fact, different layers of DSP are increasingly coupled in
+wireless media devices.
+\item Where does this leave the centre of envelopment? The cost of this
+freeing up of movement, of mobility, seems to me to be an
+interiorisation of constitutive differences, not just in DSP code but
+in the perceptual fields and embodiment of the mobile user. The irony
+of the DSP is that it uses code to quantify sensations or physical
+movements that lie at the fringes of representation or awareness. We
+can't see DSP as such, but it supports our seeing and
+moving. {\em It brings code quite close to the body}. It can work
+with audio and images in ways that bring them much closer to us. The
+proliferation of mobile devices such as mp3 and digital cameras is one
+consequence of that. Yet the price DSP pays for this proximity to
+sensation, to sounds, movement, and others, is the envelopment I have
+been describing. DSP acts as a centre of envelopment, as something that
+tends to interiorise intensive movements, the changing nature of
+change, the intensive movements that give rise to it. 
+\item This brings us back to the UMPC video: it shows two individuals.
+Their relation can never, it seems, get very far. The provision of
+images, sound and wireless connectivity has come so far, that they
+hardly need encounter each other at all. There is something intensely
+monadological here: DSP is heavily engaged in furnishing the interior
+walls of the monad, and with orienting the monad in relation to other
+monads, but making sure that nothing much need pass between them. So
+much has already been pre{}-processed between, that nothing much need
+happen between. They already have a complete perception of their
+relation to the other. 
+\item On a final constructive note, it seems that there is room for
+contestation here. The question is how to introduce the set{}-based
+code processes that have proven productive in other areas into the
+domain of DSP. What would that look like? How would it be sensed? What
+could it do to our sensations of video or wireless media?
+\stopitemize
+
+\page
+
+\SubSubTitle{References}
+
+Deleuze, Gilles. {\em Difference and Repetition}. Translated by Paul Patton, {\em Athlone Contemporary European Thinkers}. (London; New
+York: Continuum, 2001).
+
+Panesar, Gajinder, Daniel Towner, Andrew Duller, Alan Gray, and Will Robbins. {\quote Deterministic Parallel Processing}, {\em International Journal of Parallel
+Programming} 34, no. 4 (2006): 323{}-41.
+
+PicoChip. 'Advanced Wireless Technologies', (2007). \Url{http://www.picochip.com/solutions/advanced_wireless_technologies}
+
+PicoChip. 'Pc202 Integrated Baseband Processor Product Brief', (2007). 
+\Url{http://www.picochip.com/downloads/03989ce88cdbebf5165e2f095a1cb1c8/PC202_product_brief.pdf}
+
+Smith, Steven W. {\em The Scientist and Engineer's Guide to Digital Signal Processing}: California Technical Publishing, 2004).
+
+Thrift, Nigel. {\quote Remembering the Technological Unconscious by Foregrounding Knowledges of Position}, {\em Environment \& Planning D: Society \& Space} 22, no. 1 (2004): 175{}-91.
+

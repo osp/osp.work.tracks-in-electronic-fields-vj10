@@ -1,0 +1,99 @@
+\startenvironment environ
+
+ \showframe
+ \showmakeup
+ \showgrid
+ \showsetups
+
+% \definepapersize[vj10][width=13.5cm,height=18.5cm]
+\definepapersize[vj10][width=13cm,height=18.5cm]
+\definemakeup[pagedetitre]
+
+\setuppapersize[vj10][A5]
+%\setuplayout[width=10.25cm,height=.80\paperheight,topspace=.08333\paperheight,backspace=1.58329cm,footer=.05\paperheight,tolerance=verytolerant,location=doublesided,marking=on,header=0pt]
+\setuplayout[width=.75\paperwidth,height=.80\paperheight,topspace=.08333\paperheight,backspace=.08333\paperwidth,footer=.05\paperheight,tolerance=verytolerant,location=middle,marking=on,header=0pt]
+\setuppagenumbering[alternative=doublesided]
+\setupfootertexts[\pagenumber]
+\setupitemize[packed]
+\setupcombinations[width=fit,distance=0em]
+\setupwhitespace[none]
+\setupindenting[yes, 1em, next]
+\setupbodyfont[9pt,rm]
+\setupfootnotes[location=page,way=section,rule=on,bodyfont=6pt]
+\setupmakeup[voffset=1cm]
+\setupbodyfontenvironment[default][em=italic]
+\setuptype[space=on]
+\setupinmargin[style=\tfxx\setupinterlinespace,stack=yes,location=both]
+\setupframed[rulethickness=0.1mm,align=right]
+\setupframed[advert][offset=1em,frame=off,background=color,backgroundcolor=lightgray,corner=round,width=.6\textwidth,align=middle]
+
+% MAKE DUTCH QUOTES SAME AS ENGLISH (CAN'T ALSO ADD TO VOCABULARY WITH OTHER \def\quote COMMAND; CANCELS \setuplanguage)
+% \setuplanguage
+%   [nl]
+%   [leftquote=\upperleftsinglesixquote,
+%    leftquotation=\upperleftdoublesixquote]
+
+% MAKE ALL QUOTES (' and ") SAME AS ENGLISH AND ADD TO VOCABULARY
+\def\quote#1{\upperleftsinglesixquote{#1}\upperrightsingleninequote{\Vocabulary{#1}}}
+\def\quotation#1{\upperleftdoublesixquote{#1}\upperleftdoubleninequote}
+\def\SHOUT#1{\Vocabulary{#1}\kap{#1}}
+
+% SEPARATING LANGUAGES (NEED TO INVENT NEW STYLE; RE-DEFINING \en DIRECTLY DOES NOT WORK)
+\def\Eng#1{\par{\inothermargin{\tt\setupinterlinespace EN\par}}{\en{#1}}\par}
+\def\Ned#1{\par{\inothermargin{\tt\setupinterlinespace NL\par}}{\nl{#1}}\par}
+\def\Fra#1{\par{\inothermargin{\tt\setupinterlinespace FR\par}}{\fr{#1}}\par}
+
+\def\Flag#1{\inothermargin{\tt #1}}
+
+% REGISTERS
+% \setuplist[inhoud][sectionnumber=no,prefix=no,alternative=c]
+\defineregister[Author][Authors]
+\defineregister[License][Licenses]
+\defineregister[Vocabulary][Vocabulary]
+\defineregister[Translation][Translations]
+\setupregister[Author][n=1,coupling=yes]
+\setupregister[License][n=1,coupling=yes]
+\setupregister[Vocabulary][n=2,coupling=no]
+\setupregister[Translation][n=1,coupling=yes]
+
+% HEADERS
+\def\AuthorStyle#1{\Author{#1}\framed[leftframe=off,rightframe=off,topframe=off]{\WORD{#1}}}
+\def\licenseStyle#1{\License{#1}{\framed[frame=off]{\noindenting{\ttxx\setupinterlinespace{License: #1}}}}}
+\def\TitlePage#1{{\noindenting{\bfc\setupinterlinespace #1}\par}}
+\definehead[chapter][placehead=no,number=no]
+\definehead[section][placehead=no,number=no]
+
+% STYLES
+\def\Remark#1{\framed[frame=off]{\noindenting{\ttxx\setupinterlinespace{#1}}}}
+\def\Translator#1#2{{#1}\Translation{#2: #1}}
+\def\Title#1{\blank{{\bfa\setupinterlinespace{#1}}\blank[small]}}
+\def\SubTitle#1{{\bi\setupinterlinespace{#1}}\blank}
+\def\SubSubTitle#1{\blank{{\bf\setupinterlinespace{#1}}\blank[small]}}
+\definedescription[Interview][location=serried,headstyle=bold,width=broad,hang=broad]
+\def\LangStyle#1{\ttxx\setupinterlinespace{#1}}
+\def\IndentStyle#1{\blank{\framed[offset=1em,width=.95\textwidth]{\noindenting{\tt\setupinterlinespace{#1}}}}\blank}
+\def\QuoteStyle#1{\blank{\noindenting\startnarrower[1*left,1*right]{\em #1}\stopnarrower}\blank}
+\def\Manifesto#1{\noindenting{#1}}
+\def\Curanto#1{{\tf\setupinterlinespace #1\par}}
+
+% FIGURES (CAN'T USE RELATIVE PATH ?!)
+%\setupexternalfigures[directory={/home/pierre/Documents/vj10/images-processed,/home/pierre/Documents/vj10/visu,/home/pierre/Documents/vj10/visu/svgharri}]
+% \setupexternalfigures[directory={/home/pierre/Documents/vj10/vj10_oct_p/images,/home/pierre/Documents/vj10/vj10_oct_p/images/1-cleempoel,/home/pierre/Documents/vj10/vj10_oct_p/images/1-maleve,/home/pierre/Documents/vj10/vj10_oct_p/images/1-kleiner,/home/pierre/Documents/vj10/vj10_oct_p/images/1-cordy,/home/pierre/Documents/vj10/vj10_oct_p/images/1-fiore,/home/pierre/Documents/vj10/vj10_oct_p/images/1-rouvroy,/home/pierre/Documents/vj10/vj10_oct_p/images/1-hassine,/home/pierre/Documents/vj10/vj10_oct_p/images/1-lazaro,/home/pierre/Documents/vj10/vj10_oct_p/images/1-maleve,/home/pierre/Documents/vj10/vj10_oct_p/images/1-wathieu,/home/pierre/Documents/vj10/vj10_oct_p/images/2-berthet,/home/pierre/Documents/vj10/vj10_oct_p/images/2-parikka,/home/pierre/Documents/vj10/vj10_oct_p/images/2-elgaland,/home/pierre/Documents/vj10/vj10_oct_p/images/2-ghost,/home/pierre/Documents/vj10/vj10_oct_p/images/3-luksch,/home/pierre/Documents/vj10/vj10_oct_p/images/3-murtaugh,/home/pierre/Documents/vj10/vj10_oct_p/images/3-ottavi,/home/pierre/Documents/vj10/vj10_oct_p/images/4-elpueblodechina,/home/pierre/Documents/vj10/vj10_oct_p/images/4-terry,/home/pierre/Documents/vj10/vj10_oct_p/images/4-dusollier,/home/pierre/Documents/vj10/vj10_oct_p/images/4-plant,/home/pierre/Documents/vj10/vj10_oct_p/images/4-praticable,/home/pierre/Documents/vj10/vj10_oct_p/images/4-rabadan,/home/pierre/Documents/vj10/vj10_oct_p/images/4-mackenzie,/home/pierre/Documents/vj10/vj10_oct_p/images/4-snelting,/home/pierre/Documents/vj10/vj10_oct_p/images/4-prokhoris,/home/pierre/Documents/vj10/vj10_oct_p/images/4-videolibrary,/home/pierre/Documents/vj10/vj10_oct_p/images/4-yuill,/home/pierre/Documents/vj10/vj10_oct_p/images/5-appendix}]
+
+% \def\PlaceImage#1#2{\placefigure[margin][fig:#1]{#2}{\externalfigure[#1][width=1.45cm]}}
+\def\PlaceImage#1#2{\placefigure[margin]{{\bf \in{figure}[fig:#1]} #2}{\externalfigure[#1][width=1.45cm]}}
+
+% \def\PlaceFramedImage#1#2{\placefigure[margin][fig:#1]{#2}{\externalfigure[#1][width=1.45cm,frame=on]}}
+\def\PlaceFramedImage#1#2{\placefigure[margin]{{\bf \in{figure}[fig:#1]} #2}{\externalfigure[#1][width=1.45cm,frame=on]}}
+
+\def\InsideImage#1#2{\placefigure[margin][fig:#1]{#2}{\externalfigure[#1][width=1.45cm]}}
+\def\Legend#1{{\tfx\setupinterlinespace #1\par}}
+\def\DecodeFigure#1{\placefigure[force][fig:#1]{}{\externalfigure[#1][factor=max,height=\textwidth]}}
+\def\DecodeFramed#1{\placefigure[force][fig:#1]{}{\externalfigure[#1][factor=max,frame=on,height=\textwidth]}}
+\def\CurantoFigure#1#2{\placefigure[force][fig:#1]{#2}{\externalfigure[#1][factor=max,height=\textwidth]}}
+\def\Logo#1#2{\placefigure[fig:#1]{#2}{\externalfigure[#1][width=0.5\textwidth]}}
+
+\def\Url#1{{\hyphenatedurl{#1}}}
+\def\SmallUrl#1{{\tfx\setupinterlinespace {\hyphenatedurl{#1}}}\blank}
+
+\stopenvironment

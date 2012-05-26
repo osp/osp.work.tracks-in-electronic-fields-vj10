@@ -1,0 +1,817 @@
+\AuthorStyle{Simon Yuill}
+
+\licenseStyle{The text is under a GPL. The images are a little trickier as none of them belong to me.\\The images from ap and David Griffiths can be GPL as well, the Scratch Orchestra images (the graphic music scores) were always published \quote{without copyright} so I guess are public domain. The photograph of the Scratch Orchestra performance can be GPL or public domain and should be credited to Stefan Szczelkun. The other images, Sun Ra, Black Arts Group and Lester Bowie would need to mention \quote{contact the photographers}. Sorry the images are complicated but they largely come from a time before copyleft was widespread.\par}
+
+\Remark{Text first published in English in Mute: \Url{http://www.metamute.org/en/All-Problems-of-Notation-Will-be-Solved-by-the-Masses.}\par}
+
+\Remark{Translation from English: \Translator{Anne Smolar}{English to French}\par}
+
+\Fra{\Title{Tous les probl\`emes de notation seront r\'esolus par les masses (version abr\'eg\'ee)}
+
+De toutes les formes d'art soutenues et rendues possibles par le
+Logiciel Libre et Open Source, la programmation live ou \quote{livecoding}
+est apparue \^etre celle qui incarne le plus directement les principes
+cl\'es de la production de logiciels libres et open source de
+cr\'eation et d'exp\'erience m\^eme de l'{\oe}uvre. Dans le
+{\em livecoding}, l'{\oe}uvre est exprim\'ee par du code logiciel
+\'ecrit et r\'e\'ecrit en direct durant son ex\'ecution. Beaucoup
+d'artistes du {\em livecoding} r\'edigent leurs propres outils
+logiciels pour permettre ce genre de programmation. Le
+{\em feedback.pl} d'Alex McLean fut un des premiers outils de ce
+type. Il s'agit d'un simple script Perl qui lit et ex\'ecute en continu
+un extrait de son propre code affich\'e par un \'editeur de texte. Ce
+code d\'efinit divers algorithmes qui g\'en\`erent de la musique.
+Durant la performance, il est r\'e\'ecrit par l'artiste, changeant la
+structure musicale et improvisant vraiment avec le code. Une projection
+du bureau de l'artiste rend visible le processus, mettant ainsi en
+valeur la fa\c{c}on dont le code et les modifications qui lui sont
+apport\'ees font partie int\'egrante du travail et de son exp\'erience
+par les spectateurs. La relation formelle et mat\'erielle entre le code
+et la musique sont par cons\'equent discernables, m\^eme si de nombreux
+spectateurs ne sont pas familiers des langages de programmations
+eux{}-m\^emes. C'est un peu comme quand on assiste \`a une performance
+sur un instrument acoustique telle qu'une guitare ou une clarinette.
+Bien qu'on puisse ne pas comprendre comment jouer de ces instruments
+soi{}-m\^eme, on peut relier les gestes des musiciens aux sons que nous
+entendons et ainsi acqu\'erir une notion de la relation entre le son et
+sa production mat\'erielle. Ceci contraste nettement avec les formes
+ant\'erieures de performance musicale \'electronique, comme celles de
+Jean Michel Jarre et Todd Machover, dans lesquelles les appareils
+interfaces sont souvent pr\'esent\'es sur sc\`ene simulant ou en
+r\'ef\'erence \`a des instruments acoustiques. Le {\em livecoding}
+se dispense de ce type de \quote{f\'etiches} et expose sans honte la
+mat\'erialit\'e nue de sa production. La pr\'esentation inhabituelle du
+code comme un mat\'eriau brut m\`ene toutefois \`a quelque chose de
+fort diff\'erent de la performance de la guitare ou de la clarinette,
+mais ressemble davantage \`a la r\'ev\'elation de la machinerie
+sc\'enographique dans une pi\`ece de Brecht. Un avantage est ainsi
+cr\'e\'e en exposant quelque chose qui est normalement dissimul\'e.
+
+Si le {\em livecoding} s'est initialement d\'evelopp\'e comme une
+forme de musique, il n'est pas limit\'e \`a cela. Fluxus de David
+Griffith et PacketForth{\em } de{\em } Tom Schouten sont des
+outils qui permettent de cr\'eer des travaux visuels, le premier
+\'etant bas\'e sur un moteur graphique 3D et le second \'etant un
+syst\`eme de traitement de la vid\'eo. Certains outils informatiques
+existants, tels que SuperCollider,{\em } Chuck et Pure Data ont
+aussi \'et\'e utilis\'es pour du{\em  livecoding}. En fait,
+n'importe quel langage ou outil de programmation qui peut ex\'ecuter un
+code au vol peut potentiellement \^etre utilis\'e pour du
+{\em livecoding}. Le concept a aussi \'et\'e \'etendu \`a d'autres
+formes de travaux: le Social Versioning System (SVS) permet \`a des
+jeux de simulation multi{}-joueurs d'\^etre cr\'e\'es et cod\'es en
+direct, le nouveau code \'etant distribu\'e aux joueurs simultan\'ement
+au d\'eroulement du jeu. Life Coding de Ap est une performance \`a
+grande \'echelle qui combine la programmation logicielle, la m\'ethode
+de {\em circuit bending} en cr\'eation musicale et des
+pr\'esentations parl\'ees de type conf\'erence.
+
+\SubSubTitle{Esth\'etique du livecoding}
+
+Deux facettes{}-cl\'es du {\em livecoding} incarnent les principes du
+Logiciel Libre et Open Source. D'une part, la fa\c{c}on dont il fait de
+la continuelle r\'e\'ecriture de code elle{}-m\^eme un mode primaire de
+production artistique, d'autre part, sa pr\'esentation de
+l'\quote{{\oe}uvre} elle{}-m\^eme comme une partie de code \'evolutif ouvert
+plut\^ot que comme un artefact statique distinct. A l'oppos\'e de la
+plupart de l'art non{}-digital et de l'art des nouveaux m\'edias qui
+est pr\'esent\'e exclusivement comme une marchandise \`a consommer, le
+{\em livecoding} rend son propre contenu et sa pratique de
+production accessible aux autres. Le {\em livecoding} met en valeur
+le principe de production du Logiciel Libre et Open Source bas\'e sur
+le code comme une forme de production qui est elle{}-m\^eme \quote{live} et
+vivante, permettant la production par d'autres \`a leurs propres fins.
+
+\PlaceImage{ottoroessler.jpg}{Otto Roessler at ap 'life coding' event, Piksel, 2007}
+\PlaceImage{pattern-cascade.jpg}{David Griffths, fluxus, screengrab}
+
+Ce \quote{permettre la production par d'autres} se prolonge souvent
+au{}-del\`a de la performance, non seulement par l'usage d'une
+distribution de type Logiciel Libre, mais aussi dans le recours
+conscient aux ateliers comme moyen de pr\'esentation des {\oe}uvres et
+d'enseignement des savoirs utilis\'es dans leur cr\'eation. Cet aspect
+p\'edagogique se prolonge dans la pro\'eminence donn\'ee aux rencontres
+techniques et aux ateliers de d\'eveloppement au sein de festivals
+organis\'es par des artistes tels que Piksel et MAKEART, ou dans des
+groupes tels que Dorkbot et OpenLab, ainsi que dans la cr\'eation de
+plateformes et projets de diss\'emination tels que pure:dyne ou FLOSS
+Manuals. De nombreuses performances et projets de {\em livecoding}
+sont eux{}-m\^emes souvent par nature des \quote{ateliers} ad hoc et donc un
+prolongement de l'\'ethique de partage et de diffusion publique du
+{\em livecoding}. Les participants des \'ev\`enements ap qui sont
+organis\'es sur de longues p\'eriodes de 12h et plus, apprennent et
+adaptent les outils de la performance tandis qu'elle se d\'eroule. Sur
+une plus petite \'echelle, le OpenLab de Londres accueille les
+performances \quote{drumming cercle} auxquelles quiconque peut se joindre
+avec ses propres algorithmes et codes, afin de simultan\'ement
+construire et d\'evelopper une {\oe}uvre rythmique collective et des
+performances qui commencent sur une partie du code qui est r\'e\'ecrite
+par des artistes successifs. Plut\^ot que d'\^etre marginale ou
+h\'et\'erog\`ene \`a l'\quote{art}, l'id\'ee d'atelier a \'et\'e absorb\'ee
+comme un aspect int\'egral de l'esth\'etique du {\em livecoding}.
+
+Le {\em livecoding} n'est pas la seule, ni m\^eme la forme dominante
+de pratique, emprunt\'ee par tous ceux qui sont engag\'es dans les arts
+li\'es au Logiciel Libre et Open Source. Tous les praticiens
+impliqu\'es dans ces projets ont en commun d'\^etre attach\'es \`a la
+notion \'elargie de \quote{code live} en tant que mode de production et
+d'avoir une pr\'ef\'erence commune pour une esth\'etique de type
+atelier. C'est aussi dans ces pratiques plus \quote{p\'edagogiques} que la
+production artistique au sein du Logiciel Libre et Open Source
+rencontre les autres aspects du monde du Logiciel Libre, et plus
+particuli\`erement les pratiques politiques et sociales engag\'ees qui
+\'emergent des hacklabs et hackmeets.
+
+\SubSubTitle{Hacklabs, Hackmeets et Centres Sociaux}
+
+Les hacklabs sont des lieux autog\'er\'es qui offrent un acc\`es libre
+\`a des ordinateurs et \`a internet. Ils utilisent en g\'en\'eral des
+machines r\'ecup\'er\'ees ou recycl\'ees tournant sur GNU/Linux et,
+parall\`element au fait de procurer un acc\`es internet, la plupart des
+hacklabs organisent des ateliers sur un \'eventail de sujets, de
+l'usage de base d'un ordinateur et l'installation de Linux, \`a la
+programmation, \`a l'\'electronique et \`a la radiodiffusion libre (ou
+pirate). Les premiers hacklabs se sont d\'evelopp\'es en Europe,
+\'emergeant souvent de la tradition des centres sociaux squatt\'es et
+des laboratoires de m\'edia communautaires. En Italie, ils ont \'et\'e
+li\'es avec les centres sociaux autonomes et en Espagne, en Allemagne
+et aux Pays{}-Bas, avec le mouvement anarchiste des squats. Les
+hackmeets sont des rassemblements temporaires de hackers et
+d'activistes, dans lesquels on \'echange outils et savoirs et dans
+lesquels on d\'eveloppe des projets. C'est en Italie notamment, dans
+les ann\'ees 1990, que se sont tenus les premiers hackmeets. Il existe
+des liens directs entre nombre d'entre eux et les artistes travaillant
+avec le Logiciel Libre et Open Source. Le projet dyne:bolic (duquel est
+sorti pure:dyne) s'est partiellement d\'evelopp\'e dans les hackmeets
+italiens et les hacklabs hollandais. Le hacklab RampArts de Londres a
+offert un point de rencontre au groupe local OpenLab, et \`a Barcelone,
+des espaces tels que Hackitectura et Riereta ont soutenu plusieurs
+projets artistiques et politiques \`a base de Logiciel Libre et Open
+Source. Tous les artistes travaillant avec le Logiciel Libre et le
+{\em livecoding} ne partagent pas n\'ecessairement la politique de
+la sc\`ene hacklab, et tous les participants aux hacklabs ne voient pas
+n\'ecessairement leurs activit\'es en tant qu'art, et certains sont,
+parfois \`a raison, sceptiques quant au caract\`ere artistique de ce
+qu'ils font. Toutefois, les hacklabs ont \'et\'e absolument
+fondamentaux pour le d\'eveloppement du Logiciel Libre et Open Source
+r\'ecent, plus particuli\`erement en Europe et en Am\'erique du Sud, et
+ont apport\'e une orientation politique et \'ethique claire en
+contraste avec les perspectives politiques et sociales quelque peu
+confuses et souvent contradictoires articul\'ees dans les autres
+communaut\'es et contextes du monde Logiciel Libre et Open Source plus
+large.
+
+Si le {\em livecoding} est une des manifestations artistiques du
+Logiciel Libre et Open Source des plus embl\'ematiques, les hacklabs
+sont devenus une de ses formes sociales les plus embl\'ematiques. Bien
+que tous deux ne suivent pas des trajectoires identiques, elles se
+chevauchent n\'eanmoins et se compl\`etent l'une l'autre de mani\`ere
+significative. Le principe partag\'e de \quote{permettre la production par
+d'autres} y joue un r\^ole central. Il s'agit d'une question de
+distribution, pas simplement au niveau du produit, tel un logiciel qui
+peut \^etre facilement distribu\'e par exemple, mais au niveau de la
+pratique. La pratique elle{}-m\^eme est distributive en soi, parce
+qu'elle int\`egre la distribution du savoir sur le comment produire
+dans le produit m\^eme. Bien que cela ouvre des possibilit\'es de
+production collaborative, il faudrait voir cela comme distinct d'une
+collaboration en tant que telle. Alors qu'une pratique collaborative
+regroupe la production de plusieurs personnes en un objectif unique,
+dirigeant de la sorte la perspective de leur travail, une pratique
+distributive permet le cadrage du travail sous leur propre conduite. Ce
+qui se r\'ealise gr\^ace \`a la sortie de leur production en notation,
+en code qui ne cr\'ee pas seulement un produit, mais acquiert une vie
+active au{}-del\`a de son impl\'ementation initiale.
+
+\SubSubTitle{La Production de Notation}
+
+La notation n'est pas propre au logiciel. L'\'emergence du
+{\em livecoding} en tant qu'activit\'e initialement musicale
+refl\`ete l'engagement envers une production de notation qui a
+caract\'eris\'e maintes traditions musicales diff\'erentes. Appliquer
+le code informatique \`a la construction de son est, en un sens,
+simplement un \'episode suppl\'ementaire du processus. Le
+{\em livecoding} fonctionne sur une relation particuli\`ere entre la
+notation et la contingence. La sp\'ecificit\'e du code est ouverte \`a
+l'ind\'eterminisme de l'improvisation. A cet \'egard, le
+{\em livecoding} ne s'ajoute pas simplement \`a l'\'evolution de la
+production de notation musicale mais fait \'egalement \'echo \`a une
+p\'eriode particuli\`ere durant laquelle une relation similaire entre
+la notation et la contingence \'etait \`a l'avant{}-plan. C'\'etait une
+p\'eriode o\`u l'improvisation du jazz exp\'erimental d\'evelopp\'ee
+par des gens tels que John Coltrane, Ornette Coleman et Sun Ra,
+croisait les syst\`emes de composition \quote{ouverte} de l'avant{}-garde,
+qui furent d\'evelopp\'es par John Cage, Karlheinz Stockhausen, Earle
+Brown et d'autres. Tout comme le Logiciel Libre et Open Source fait se
+rencontrer deux \'ethiques de production de logiciel apparent\'ees,
+soit le \quote{Logiciel Libre} et le principe de l' \quote{Open Source}, mais
+cependant divergentes, nous pourrions d\'ecrire cette musique comme
+Free Open Form Performance (Performance de Forme Libre et Ouverte,
+abr\'eviation anglaise: FOFP). Le \quote{free jazz} \'etait le terme choisi
+par Coleman et d'autres musiciens de jazz qui rejetaient l'usage du
+terme \quote{improvisation}, jugeant qu'il \'etait souvent appliqu\'e \`a de
+la musique noire par un public blanc afin de souligner une musicalit\'e
+intuitive inn\'ee, refusant ainsi de reconna\^itre l'h\'eritage de
+savoir{}-faire et la tradition formelle auquel font appel les musiciens
+noirs. \quote{Ouvert} vient de {\em L'{\oe}uvre ouverte} de Umberto Eco,
+un essai \'ecrit en 1959 qui fut parmi les premiers \`a couvrir et \`a
+analyser les exp\'eriences d'{\oe}uvres al\'eatoires, ind\'etermin\'ees
+et partiellement compos\'ees qui \'emergeaient dans l'avant{}-garde en
+musique classique. A la fin des ann\'ees 1960, ces deux courants de
+d\'eveloppement se sont rejoints, avec des compositeurs de jazz tels
+que Coleman et Anthony Braxton travaillant consciemment avec
+l'instrumentation et les formes structurales de l'avant{}-garde de la
+musique classique, et des groupes tels que le Scratch Orchestra
+adoptant la structure collective de formations tels que l'Art Ensemble
+of Chicago. Les exp\'eriences sur la notation ont \'et\'e importantes
+pour nombre de ces groupes et compositeurs, mais l'exploration de la
+production notationnelle fut, pour le Scratch Orchestra, un des
+objectifs fondateurs.
+
+\PlaceFramedImage{scratch1.jpg}{Scratch Orchestra score}
+\PlaceFramedImage{scratch2.jpg}{Scratch Orchestra score}
+\PlaceFramedImage{scratch3.jpg}{Scratch Orchestra score}
+
+\SubSubTitle{Histoire du Scratch}
+
+Le Scratch Orchestra est n\'e d'une s\'erie de cours publics de musique
+exp\'erimentale que Cornelius Cardew et d'autres compositeurs
+organisaient \`a Londres \`a la fin des ann\'ees 1960. Elles
+commenc\`erent \`a l'Anti{}-Universit\'e de la rue de Rivington et se
+poursuivirent au Morley College, un centre d'\'education pour
+travailleurs mis en place au 19\high{e} si\`ecle. Ce fut
+l\`a que les membres fondateurs du Scratch Orchestra se
+rencontr\`erent: Cardew, Michael Parson, Howard Skempton et les
+personnes qui suivaient leurs cours. La fondation de l'Orchestre fut
+officiellement annonc\'ee en juin 1969 lors de la publication dans le
+{\em Musical Times} de \quote{Un Scratch Orchestra: un brouillon de
+constitution} \'ecrit par Cardew. La constitution d\'efinit l'Orchestre
+comme suit:
+
+\QuoteStyle{({\dots}) Un grand nombre d'enthousiastes mettant leurs ressources en
+commun (pas principalement des ressources mat\'erielles) et se
+rassemblant pour des actions (faire de la musique, de la performance,
+de l'\'edification).}
+
+Quiconque pouvait s'y affilier, ind\'ependamment de sa capacit\'e
+musicale. Nombre d'artistes visuels, comme Stefan Szczelkun, l'ont
+rejoint et apport\'e avec eux l'int\'er\^et et l'exp\'erience des
+happenings artistiques et des travaux d'intervention urbaine. Par ce
+biais et par des concerts plus conventionnels, l'Orchestre avait pour
+objectif de \quote{fonctionner dans la sph\`ere publique} en pr\'esentant des
+{\oe}uvres cr\'e\'ees par le groupe. La constitution souligne les formes
+d'activit\'es vari\'ees que l'Orchestre poursuivrait en cr\'eant ces
+{\oe}uvres. Une de ses activit\'es les plus importantes fut l'\'ecriture
+de \quote{Scratch Music}. Chaque membre de l'Orchestre avait un ordinateur
+portable, ou \quote{Scratchbook}, sur lequel il \'ecrivait de petites {\oe}uvres
+qui pouvaient \^etre combin\'ees en de plus grandes pi\`eces pour
+orchestre. La constitution insiste pour que ces pi\`eces de Scratch
+Music soient un processus actif d'exp\'erimentation avec diff\'erentes
+formes de notation: \quotation{verbale, graphique, musicale, collage, etc}. En
+1972, un processus clairement d\'efini pour le d\'eveloppement du
+Scratch Orchestra \'emerge. Chaque morceau \'etait jou\'e par son
+auteur, puis chaque partition \'etait \'echang\'ee et jou\'ee par
+d'autres membres de l'Orchestre, offrant un genre de \quote{critique par ses
+pairs} des compositions. Les \quote{Scratchers} avaient pour consigne de ne
+pas \'ecrire plus d'un nouveau morceau par jour, mais \'etaient
+encourag\'es de garder une \quote{production r\'eguli\`ere}, afin qu'il y ait
+une boucle de feedback serr\'ee entre l'\'ecriture et la performance.
+
+D\`es ses origines, le Scratch Orchestra prit la d\'ecision consciente
+que toutes leurs notations puissent \^etre librement distribu\'ees, en
+d\'eclarant que les travaux de Scratch Music \'etaient exempts de droit
+d'auteur. Sur l'une de leurs premi\`eres collections
+de partitions, publi\'ees en 1969, appel\'ee {\em Nature Study
+Notes: Improvisation Rites}, la notice de copyright conventionnelle est
+remplac\'ee par la suivante:
+
+\QuoteStyle{Il n'y a pas de droits r\'eserv\'es dans ce livre de rites. Ils peuvent
+\^etre reproduits et jou\'es librement. Les contributions que quiconque
+souhaiterait envoyer pour une seconde s\'erie, doivent \^etre
+adress\'ees \`a l'\'editeur: C.Cardew, 112 Elm Grove Road, Londres,
+SW13.}
+
+Bien que l'abandon de son droit d'auteur ne constituait
+rien de nouveau {--} les situationnistes et le chanteur folk Woody
+Guthrie avaient plac\'e des notices anti{}-copyright dans leurs travaux
+{--} il est notable que le Scratch Orchestra ait aussi encourag\'e
+d'autres \`a modifier et adapter leurs compositions, en d\'eclarant
+qu'elles pouvaient \^etre incorpor\'ees dans la version suivante.
+
+\SubSubTitle{Interruptions de Sons}
+
+Les {\oe}uvres de {\em Nature Study Notes} sont tous des morceaux
+d'instru\-ctions textuelles. Toutefois peu d'entre elles d\'ecrivent des
+moyens de produire des sons, mais se concentrent plut\^ot sur diverses
+interactions sociales qui construisent et jouent avec les relations de
+pouvoir entre les artistes. Certains ressemblent \`a des jeux
+d'\'equipe:
+
+\QuoteStyle{Former un cercle debout. Nommer un meneur, il se place dans le cercle,
+les yeux band\'es. Le restant du groupe tourne lentement autour de
+lui/elle. ({\dots}) Lorsque le meneur est touch\'e, il c\`ede son
+r\^ole en criant \quote{Porridge}.}
+
+D'autres sont comme des automatons g\'en\'eratifs:
+
+\QuoteStyle{Chaque personne qui rentre dans l'espace de performance re\c{c}oit un
+nombre suivant son arriv\'ee. Quiconque peut donner un ordre (\`a
+ob\'eir imp\'erativement) \`a un nombre plus \'elev\'e, et doit ob\'eir
+aux ordres que lui donne un nombre moins \'elev\'e. Le N{\textdegree}1
+re\c{c}oit ses ordres du num\'ero le plus \'elev\'e du moment (le
+dernier joueur \`a entrer); le num\'ero le plus \'elev\'e ne peut
+donner d'ordres qu'au N{\textdegree}1.}
+
+De nombreuses compositions de {\em Nature Study Notes} mettent en
+place des \quote{syst\`emes d'exploitation} \`a petite \'echelle, des
+structures organisationnelles simples qui permettent de produire
+d'autres travaux en leur sein. La notion de performance en tant que
+syst\`eme d'exploitation a \'et\'e utilis\'ee par ap dans leur projet
+{\em Life Coding}. Adaptant les m\'ecanismes des syst\`emes
+informatiques, l'interaction des ex\'ecutants est dict\'ee par des
+signaux d' \quote{interruption} connect\'es \`a des actions d\'efinies par
+des tableaux de consultation (lookup tables). Dans les ordinateurs
+conventionnels, le m\'ecanisme d'interruption permet aux signaux
+d'appareils p\'eriph\'eriques tels que souris, claviers ou cartes de
+r\'eseaux de rentrer dans le syst\`eme d'exploitation. D\`es la
+r\'eception d'un signal interrompu, l'ordinateur s\'electionne une
+action r\'eponse en confrontant un code d'identification pour chaque
+signal \`a un tableau \`a consulter de routines programm\'ees
+appel\'ees \quote{agents interrupteurs}. De la sorte, presser une cl\'e du
+clavier ou bouger la souris peut changer le cours des \'ev\`enements
+qui prennent place au moment m\^eme. L'interruption cr\'ee un vecteur
+entre l'op\'eration interne du processeur central (CPU), le domaine des
+op\'erations notationnelles et les contingences du monde ext\'erieur.
+Comme Edsger Dijkstra, un des inventeurs du syst\`eme d'interruption,
+l'a not\'e:
+
+\QuoteStyle{Ce fut une belle invention, mais aussi une bo\^ite de Pandore. Les
+moments exacts d'interruption \'etant impr\'evisibles et hors de
+contr\^ole, le m\'ecanisme d'interruption a transform\'e l'ordinateur
+en une machine non{}-d\'eterministe dot\'ee d'un comportement
+non{}-reproductible. Pourrions{}-nous contr\^oler une telle b\^ete?}
+
+\PlaceImage{sunra.jpg}{Sun Ra, film still from Space is the Place, 1974}
+
+L'interruption rompt le d\'eroulement lin\'eaire ferm\'e de la machine
+de Turing, permettant aux programmes d'\^etre arr\^et\'es, alt\'er\'es
+ou red\'emarr\'es. Ceci a permis le d\'eveloppement de langages qui
+pouvaient \^etre ex\'ecut\'es comme des formulations individuelles, pas
+\`a pas, suscitant des commandes Shell (la commande textuelle
+utilis\'ee sur les terminaux UNIX) et la~read{}-evaluate{}-print{}-loop
+(parfois \quote{read{}-eval{}-print{}-loop} ou REPL) qui constitue la base
+des langages de programmation interactifs tels que Lisp. L'interruption
+et le~read{}-eval{}-print{}-loop sont au c{\oe}ur de tout programme de
+{\em livecoding} et de tous les syst\`emes d'exploitation
+d\'eriv\'es d'UNIX. Dans sa note sur la premi\`ere version de Linux,
+Linus Torvalds \'ecrivit: \quote{les interruptions ne sont pas cach\'ees.}
+C'est ici que la contingence et la notation se rencontrent, mais c'est
+aussi ici que la possibilit\'e d'erreurs appara\^it. Toutefois,
+plut\^ot que de pi\'etiner doucement de peur d'un accident, l'erreur
+amen\'ee par un signal interrompu est pour certains une opportunit\'e
+positive et productive. Ceci n'est pas limit\'e \`a des interruptions
+d'ordinateurs. Sun Ra interrompait d\'elib\'er\'ement ses
+r\'ep\'etitions et pi\'egeait ses musiciens. Les erreurs ainsi
+produites n'\'etaient toutefois pas des fautes mais plut\^ot des formes
+d'\'evolution:
+
+\QuoteStyle{Il n'y a pas de fautes. Si quelqu'un joue faux ou si \c{c}a sonne mal,
+les autres feront la m\^eme chose. Et alors cela para\^itra juste.}
+
+Le syst\`eme d'exploitation du Arkestra de Ra incorporait des \quote{bruits}
+de ce genre et se restructurait simultan\'ement. Ce \quote{bruit} n'est pas
+simplement celui d'un son non musical, mais aussi, dans le sens que
+Jacques Attali donne de la th\'eorie de l'information et des
+syst\`emes, tout contenu qui n'est pas reconnu par un syst\`eme
+existant et est d\`es lors oppos\'e \`a l' \quote{information}, contenu qui a
+de la valeur ou du sens dans un syst\`eme donn\'e. Attali d\'ecrit
+l'\'evolution des styles musicaux comme un syst\`eme existant de
+musique devenant expos\'e au \quote{bruit} qui l'avait initialement
+d\'erang\'e, et qui le restructure par incorporation et donne naissance
+\`a un nouveau syst\`eme. Lors du voyage de l'Arkestra, des syst\`emes
+se sont effondr\'es puis sont n\'es \`a nouveau quotidiennement.
+
+\SubSubTitle{Compositions Scolaires}
+
+Ce pouvoir sur les syst\`emes n'\'etait pas limit\'e au d\'emiurge ou
+ma\^itre du jazz intergalactique. A la m\^eme \'epoque que celle o\`u
+le Scratch Orchestra r\'einventait la musique \`a partir de ses
+fondations, un groupe d'enfants \`a la Muzzey Junior High School aux
+Etats{}-Unis exp\'erimentait leur propre syst\`eme de notation
+improvis\'e. Ces enfants n'\'ecrivaient cependant pas de la musique,
+mais apprenaient en autodidactes \`a programmer des ordinateurs. Ils
+faisaient partie du premier LOGO Lab, un projet de Seymour Papert, un
+chercheur du Laboratoire d'Intelligence Artificielle du MIT. LOGO
+\'etait un simple langage de programmation qui dirigeait une entit\'e
+appel\'ee \quote{tortue}. La tortue pouvait \^etre soit un personnage virtuel
+sur \'ecran soit un petit robot qui suivait des instructions pour se
+d\'eplacer sur le terrain (sur l'\'ecran ou l'espace au sol) et qui
+pouvait dessiner une tra\^in\'ee dans son sillage. Les \'etudiants du
+LOGO Lab d\'evelopp\`erent leurs propres programmes sur lesquels les
+tortues ex\'ecutaient des dessins ou des exercices spatiaux. Dans la
+mesure o\`u LOGO exprimait une s\'erie d'actions potentielles
+desquelles \'emerge un dessin, il ressemble \`a la notation du Scratch
+Orchestra, qui n'a pas souvent produit directement du son mais plut\^ot
+des actions desquelles pouvait na\^itre du son. Comme l'\'ecrivait
+Cardew dans ses notes \`a {\em Treatise}: \quotation{La notation est un moyen
+pour faire bouger les gens.}
+
+\PlaceFramedImage{cardew.jpg}{Cornelius Cardew, Treatise, 1963-67}
+
+Tout comme le Scratch Orchestra, le LOGO Lab s'est d\'evelopp\'e \`a
+partir d'un int\'er\^et p\'edagogique conscient pour le d\'eveloppement
+de recherches pratiques de formes collectives et autog\'er\'ees. Elles
+furent r\'ealis\'ees dans des activit\'es \quote{improvis\'ees}
+semi{}-structur\'ees et utilisaient des syst\`emes de notation
+auto{}-d\'evelopp\'es comme moyen de construction, de communication et
+de r\'eflexion sur ces activit\'es. 
+
+Comme il appara\^it clairement dans la constitution, le Scratch
+Orchestra \'etait une exploration consciente de ce que pouvait \^etre
+la notation et quel lien elle entretenait avec les tentatives
+d'\'etablir une autre compr\'ehension de ce que peut \^etre la pratique
+de la musique elle{}-m\^eme. Ceci fut d\'evelopp\'e au{}-del\`a du
+contexte p\'edagogique des classes du Morley College, et c'est
+peut{}-\^etre dans un geste d'autod\'erision, que les {\em Nature
+Study Notes} du Scratch Orchestra et les plus anciennes partitions
+{\em School Compositions} de Cardew prirent d\'elib\'er\'ement la
+forme de livres d'exercices.
+
+Papert \'etait convaincu que la programmation \'etait un savoir qui
+devait \^etre accessible \`a tout un chacun, pas en tant que
+\quote{technologie} {--} soit en tant que m\'ecanisme pour une production
+manufactur\'ee d\'etach\'ee du travail humain {--} mais comme un moyen
+d'exploration conceptuelle. Il existe des parall\`eles politiques entre
+les deux projets. L'approche de l'informatique de Papert a \'et\'e
+influenc\'ee par son implication ant\'erieure dans les mouvements
+politiques radicaux de gauche. Dans les ann\'ees 1950, il fit partie du
+groupe qui publiait la {\em Socialist Review} \`a Londres. Le
+concept du LOGO Lab combinait des id\'ees des \'etudes psychologiques
+de Jean Piaget et de Lev Vygotsky sur le d\'eveloppement des enfants
+suivant les principes de non{}-scolarit\'e d'Ivan Illich. L'approche
+invoqu\'ee est celle \quotation{d'un enfant qui programme l'ordinateur plut\^ot
+qu'un ordinateur qui sert \`a programmer un enfant.} Papert d\'eclare
+aussi que la conception d'un langage de programmation pourrait
+refl\'eter une position politique et \'ethique particuli\`ere. Il
+critique BASIC, un autre langage con\c{c}u \`a l'origine pour enseigner
+la programmation, comme d\'emontrant \quotation{comment un syst\`eme social
+conservateur s'approprie et tente de neutraliser un instrument
+potentiellement r\'evolutionnaire.} Bien que le Scratch Orchestra ne se
+soit pas d\'evelopp\'e \`a partir d'un programme politique d\'efini, il
+a n\'eanmoins agi comme un contexte pour le d\'eveloppement d'une
+pratique politis\'ee des arts, instruite \`a la fois par des tendances
+marxistes et anarchistes. C'est par le Scratch Orchestra que Cardew a
+acquis une conscience politique profonde, appliquant une perspective
+explicitement mao\"iste \`a sa propre pratique, et qui le mena \`a son
+implication dans la fondation du Parti Communiste R\'evolutionnaire de
+Grande{}-Bretagne (Marxiste{}-L\'eniniste). Se faisant l'\'echo des
+critiques de Papert au sujet de BASIC, Cardew a \'egalement critiqu\'e
+le conservatisme institutionnel de nombreuses notations de musique,
+exigeant plut\^ot que \quotation{tous les probl\`emes de notation soient
+r\'esolus par les masses.} Pour Papert et Cardew, la p\'edagogie
+\'etait une voie \`a deux sens. Le labo et l'orchestre ont bris\'e les
+distinctions entre le ma\^itre et l'\'el\`eve et plac\'e
+l'apprentissage dans le contexte de la production autog\'er\'ee. Ainsi,
+il s'agissait de formes de pratique distributive.
+
+\SubSubTitle{Apprentissage de la Contingence} 
+
+Un \'el\'ement de la contingence fut essentiel \`a cette forme de
+p\'edagogie radicale. Aux yeux de Papert, une des forces de la
+programmation comme outil d'apprentissage, \'etait qu'elle encourageait
+l'attitude \`a l'erreur. Rencontrer l'erreur, sous forme de bugs,
+\'etait un aspect in\'evitable et n\'ecessaire de la programmation,
+surtout en ce qui concerne la pratique singuli\`ere de programmation
+d\'evelopp\'ee aux AI Labs du MIT, appel\'ee \quote{hacking}. Papert
+soulignait que dans l'\'education conventionnelle, les erreurs avaient
+une connotation purement n\'egative. Lorsqu'un{}-e \'etudiant{}-e
+commet une erreur, il{}-elle est discr\'edit\'e{}-e, perd des points ou
+est puni{}-e, ce qui inculque une peur de l'erreur et m\`ene \`a ne pas
+vouloir s'\'ecarter des limites conventionnelles et prendre des
+risques. Pour le{}-la hacker, par contre, ce qui importe n'est pas
+qu'une erreur soit commise ou pas mais bien comment lui r\'epondre de
+fa\c{c}on cr\'eative. Tout comme pour l'Arkestra, inclure l'erreur est
+une possibilit\'e productrice. La prise en compte de l'erreur est
+\'evoqu\'ee dans des documents tels que HAKMEM. Diminutif de \quote{hack
+memo}, il s'agissait d'une s\'erie de bribes de codes et d'id\'ees de
+programmation distribu\'ees parmi les hackers des AI Labs, m\'emos
+auxquels ont contribu\'e notamment Richard Stallman, James Gosling et
+Marvin Minsky. Il y est fait mention \`a de nombreuses reprises des
+possibilit\'es d\'ecouvertes \`a la suite de bugs et d'incoh\'erences
+au sein des ordinateurs du PDP sur lesquels travaillait le AI Lab.
+D'autres contributions proposent des fa\c{c}ons de jouer sur un nouvel
+algorithme particulier et encouragent les gens \`a le chambouler, d'une
+mani\`ere qui ne peut \^etre d\'ecrite que comme une forme de jeu de
+code esth\'etique. On peut voir HAKMEM comme l'\'equivalent des AI Labs
+aux Scratchbooks \'echang\'es entre les membres du Scratch Orchestra.
+Au sein des LOGO Labs, du code \'etait \'ecrit et \'echang\'e entre
+\'etudiants de fa\c{c}on similaire. Plut\^ot que de pr\'eparer des
+programmes \`a l'avance, les \'el\`eves \quote{improvisaient} avec leur code
+en r\'epondant \`a la performance de la tortue et modifiaient leurs
+programmes en fonction. L'apprentissage de LOGO passait donc par une
+boucle de feedback semblable de code{}-performance que des livecoders
+tels que Alex McLean identifient comme \'etant la base de leur pratique
+et qui est construite sur le principe de read{}-eval{}-print{}-loop.
+
+Les langages informatiques et de programmation proposent des
+environnements hautement contraignants qui limitent l'\'eventail
+d'interpr\'etations possibles d'une notation particuli\`ere.
+L'interpr\'etation d'une notation par un humain peut \^etre beaucoup
+moins contraignante. Pour Cardew, il s'agit d'une pr\'eoccupation
+majeure du d\'eveloppement de nouvelles formes de notations, car
+c'\'etait \`a la fois un danger et une opportunit\'e. Une opportunit\'e
+car les notations ne doivent pas seulement encoder des mod\`eles
+existants ou des syst\`emes d\'efinis de sons, mais peuvent aussi
+\^etre des propositions et des provocations pour en \'ecrire de
+nouveaux. Un danger car le musicien professionnel qui sera confront\'e
+\`a un syst\`eme de notations inhabituel, pourrait se reposer sur ses
+habitudes et pr\'edispositions personnelles, plut\^ot que d'y
+r\'epondre directement. L'ex\'ecution risque de se r\'esumer \`a une
+r\'egurgitation de vieux clich\'es et de formules \`a l'instar du
+musicien de jazz amateur d\'ecrit par Adorno, qui est incapable de
+s'\'eloigner des mod\`eles existants auxquels il s'est adapt\'e et
+soumis. Lors de la performance, le musicien professionnel arrive avec
+un syst\`eme pr\'ed\'efini de production sonore dans le cadre duquel il
+interpr\`ete la nouvelle notation. On peut r\'eagir \`a ce qui \'etait
+novateur dans la nouvelle notation comme \`a une \quote{erreur} ou \`a un
+bruit interne au syst\`eme et donc l'\'eviter. Les nouvelles notations
+n\'ecessitent des artistes ayant une attitude similaire \`a celle du
+hacker ou d'un \'etudiant du LOGO lab, quelqu'un qui
+peut r\'eagir de mani\`ere cr\'eative face \`a l'inconnu et \`a
+l'inattendu. L'artiste ne peut donc pas r\'ep\'eter une telle musique
+mais plut\^ot s'\quote{entra\^iner} \`a la fa\c{c}on d'un art martial, en
+d\'eveloppant des fa\c{c}ons d'agir sur la contingence. Ceci s'est
+\'egalement d\'evelopp\'e au moyen d'une boucle de feedback de
+performance{}-code qui a constitu\'e la base de la pratique de la
+Scratch Music. 
+
+C'est par de telles boucles de feedback que les notations incorporent
+l'exp\'erience du contingent dans une pratique future. Ce qui
+constituait l'\quote{erreur} inattendue pass\'ee devient la pr\'eparation
+pour des possibilit\'es inconnues futures. En l'int\'egrant, une
+notation enregistre le d\'eveloppement historique d'une pratique, en
+captant diff\'erentes versions de \quote{comment faire} et en permettant la
+comparaison, l'analyse et la synth\`ese. Les LOGO Labs et le Scratch
+Orchestra s'engageaient consciemment dans ce processus d'enregistrement
+de versions successives, y m\^elant le savoir progressif, les
+intentions et les standards de la communaut\'e des praticiens, qui
+agissait comme une forme de contr\^ole des versions, distinguant les
+pratiques les plus courantes des pratiques plus contradictoires ou
+tangentes. 
+
+\SubSubTitle{La Musique Noire en Notation}
+
+Comment on en arrive \`a d\'efinir une notation et comment celle{}-ci
+est distribu\'ee sont des questions essentiellement politiques. Cette
+distribution s'\'etend au{}-del\`a de la publication des partitions ou
+du code logiciel, sous la forme appliqu\'ee par l'usage des
+m\'ecanismes de copyleft par le Scratch Orchestra. Ainsi que le
+rappelle Ornette Coleman, la visibilit\'e m\^eme des notations au sein
+du processus de production, comment elles sont r\'ev\'el\'ees et
+dissimul\'ees, d\'ependent et expriment des relations de pouvoir
+particuli\`eres: 
+
+\QuoteStyle{Une fois, j'ai entendu Eubie Blake dire que quand il jouait dans des
+groupes noirs pour des audiences blanches, \`a l'\'epoque o\`u la
+s\'egr\'egation \'etait forte, les musiciens devaient arriver sur
+sc\`ene sans aucune partition \'ecrite. Les musiciens regardaient les
+partitions dans les coulisses, les laissaient l\`a et partaient la
+jouer. Ils disaient qu'ils \'etaient plus vendables s'ils
+pr\'etendaient savoir ce qu'ils faisaient. L'audience blanche se
+sentait plus en s\'ecurit\'e.}
+
+\PlaceImage{bag0.jpg}{Black Artists' Group, St Louis.}
+\PlaceImage{bag1.jpg}{Black Artists' Group}
+
+Le d\'esaveu de la notation d\'ecrit dans cet exemple est un refus de
+l'auto{}-l\'egitimisation du musicien noir. Si l'usage d'une notation
+peut aider \`a documenter le d\'eveloppement d'une pratique, son
+histoire et auto{}-analyse, alors le refus de notation est le refus de
+cette histoire, et donc, le refus de la base d'une l\'egitimation de
+l'artiste. C'est dans cette optique que Coleman met une distance entre
+sa propre pratique et l'id\'ee d'improvisation, car cette forme de
+\quote{virtuosit\'e} est devenue la base d'un d\'eni de l\'egitimation. Le
+\quote{free jazz} que lui et d'autres musiciens noirs ont mis en avant dans
+les ann\'ees 60, n'\'etait pas juste libre dans le sens d'une cassure
+de la structure musicale conventionnelle, mais aussi libre car il
+rompait avec la condition \quotation{d'improvisateur dans une situation requise}.
+Ceci a men\'e au d\'eveloppement de nouveaux espaces de performances,
+beaucoup d'entre eux \'etant situ\'es directement au sein des
+communaut\'es noires, et \`a l'articulation consciente de la pratique
+comme une forme de recherche. Lester Bowie de l'Art Ensemble of Chicago
+a choisi de rev\^etir un tablier de laborantin sur sc\`ene pour
+annoncer la performance elle{}-m\^eme comme un lieu d'exp\'erimentation
+radicale. Sun Ra encourageait son Arkestra en d\'eclarant: \quotation{Vous
+n'\^etes pas des musiciens, vous \^etes des scientifiques de la
+sonorit\'e.} Ra a pouss\'e ce concept \ encore plus loin avec la
+cr\'eation de Ihnfinity Inc en 1967, une soci\'et\'e de recherche qui
+\'etait cens\'ee \quotation{poss\'eder et op\'erer toutes sortes de laboratoires
+de recherche, de studios, d'\'equipement \'electronique, d'appareils
+\'electrochimiques communicationnels de notre propre design et
+cr\'eativit\'e{\dots}} \`A St. Louis le Black Artists' Group a mis en
+place un centre d'apprentissage afin de cr\'eer un forum de discussion
+pour la communaut\'e locale qui, \`a c\^ot\'e des performances, des
+r\'ep\'etitions et des ateliers, organisait aussi des r\'eunions et
+d\'ebats quotidiens sur des questions d'int\'er\^et local. Selon
+Anthony Braxton, la relation de la notation \`a la l\'egitimation est
+devenue la base des recherches qui forment d\'esormais le centre de son
+travail, le d\'eveloppement de la \quote{Musique Noire en Notation}. Ce
+concept va au{}-del\`a de la simple description de sons sur une page et
+se confronte au prolongement du r\^ole du son \`a un niveau socialement
+structurant: \quotation{la notation peut \^etre per\c{c}ue comme un facteur
+d'\'etablissement de la plateforme de la r\'ealit\'e de la musique.}
+
+\PlaceImage{lesterbowie.jpg}{Lester Bowie of the Art Ensemble of Chicago}
+
+Tandis qu'\`a la surface cela peut para\^itre refl\'eter la base
+p\'edagogique de projets tels que le Scratch Orchestra et les LOGO
+Labs, ceux{}-ci se sont d\'evelopp\'es \`a partir d'une trajectoire
+compl\`etement diff\'erente. M\^eme si, d'une part, les p\'edagogies de
+Cardew et Papert visaient \`a briser les structures sociales existantes
+qui d\'eterminaient l'acquisition de musique et les aptitudes \`a la
+programmation, la p\'edagogie constituait aussi la base \`a partir de
+laquelle ils r\'eint\'egraient leurs travaux au sein du cadre
+institutionnel existant. De cette fa\c{c}on leur pratique \'etait
+institutionnellement l\'egitim\'ee. En particulier, la p\'edagogie
+l\'egitimait leur statut \quote{non{}-commercial}. D'une mani\`ere identique,
+la d\'ependance des Logiciels Libres sur l'acad\'emique sugg\`ere un
+conflit d'int\'er\^ets potentiel au sein des ateliers g\'er\'es par des
+artistes, ou du moins souligne les tensions sous{}-jacentes au travail
+auto{}-valorisant qui est cens\'e \quote{payer le loyer}. Pour les musiciens
+noirs des ann\'ees 1960 aux Etats{}-Unis, pour lesquels m\^eme un
+acc\`es de base \`a l'\'education \'etait un probl\`eme, de telles
+voies n'\'etaient pas accessibles. S'approprier des tabliers \quote{blancs}
+de laborantins et une culture de recherche n'\'etait pas le meilleur
+moyen pour obtenir la reconnaissance institutionnelle, mais
+questionnait plut\^ot leur usage m\^eme en tant que m\'ecanismes de
+l\'egitimation. Pour finir le Scratch Orchestra est devenu conscient de
+sa d\'ependance \`a de telles formes externes de l\'egitimation et de
+\quote{la situation obligatoire} dans laquelle elle op\'erait.
+
+\SubSubTitle{Instrumentalisation du Collectif}
+
+En 1972 des tensions ont commenc\'e \`a \'emerger au sein du Scracth
+Orchestra. Certains ont ressenti que le groupe fonctionnait d'une
+fa\c{c}on qui \'etait en contradiction avec ses objectifs, et un
+\quote{dossier des m\'econtents} fut \'etabli pour que les gens puissent y
+adresser leurs dol\'eances. En r\'eaction, Cardew, Keith Rowe et John
+Tilbury cr\'e\`erent un groupe id\'eologique du Scratch Orchestra qui
+appliquait une pratique de l'auto{}-critique mao\"iste parmi les
+membres de l'Orchestra. M\^eme si un processus d'auto{}-critique au
+sein de l'Orchestra a pu \^etre b\'en\'efique, cette approche
+avant{}-gardiste ne fit qu'exacerber la situation. Beaucoup pens\`erent
+qu'il s'agissait d'une imposition de la part d'une \'elite
+auto{}-promue exer\c{c}ant son autorit\'e sur l'ensemble du Scratch
+Orchestra, et que le rejet de certaines initiatives des autres membres
+de la part du groupe id\'eologique, ne reconnaissait pas leur propre
+base politique. Plut\^ot que de retrouver un but clair, l'Orchestra
+s'est d\'ecompos\'e. Comme l'a dit par la suite un de ses membres,
+Eddie Prevost, la contradiction fondamentale que rencontrait
+l'Orchestra \'etait sans doute sa d\'ependance \`a sa propre
+constitution, \`a l'objectif paradoxal de \quote{l\'egif\'erer pour la
+non{}-conformit\'e}. Un autre membre, Michael Chant, fit observer que
+la constitution elle{}-m\^eme fut une \quote{partition}. L'Orchestra \'etait
+le produit de cette partition, une partition qui portait le nom d'un
+unique auteur: Cornelius Cardew. De ce point de vue, la cr\'eation du
+groupe id\'eologique du Scratch pourrait \^etre vu comme une tentative
+de r\'ecup\'erer la paternit\'e de la \quote{composition} de Cardew, faisant
+\'echo \`a la pr\'eoccupation de ses premiers \'ecrits selon lesquels
+\quotation{la partition doit gouverner la musique}. Voici peut{}-\^etre un
+exemple classique d'une avant{}-garde id\'eologique qui s'empare et
+instrumentalise le collectif \`a ses propres fins, ou de la renaissance
+de l'auteur dans un groupe qui tente de d\'epasser de telles notions
+d'auteur unique. En refusant de succomber \`a l'acquisition de telles
+id\'eologies et de la notion d'auteur, une restructuration n\'ecessaire
+de la \quote{composition} de l'Orchestra prenait place. La qualit\'e
+essentiellement distributive de l'Orchestra a investi des formes
+d'auto{}-actualisation qui ont rendu le besoin d'un groupe unique
+coh\'erent superflu. De nombreux membres se sont plus tard engag\'es
+dans des activit\'es qui prolongeaient la {\em praxis} radicale
+d\'evelopp\'ee au sein de l'Orchestra. La rupture, par cons\'equent, ne
+repr\'esentait pas l'\'echec de ses membres, mais bien l'\'eclatement
+de la limite entre la structure formelle de la partition/constitution
+et les gens qui \'etaient la \quote{substance} de l'Orchestra. Comme le
+disait Adorno pour d\'ecrire une erreur de notation dans unes des
+compositions en s\'erie de Schoenberg, cela repr\'esentait:
+
+\QuoteStyle{({\dots}) la perc\'ee de la substance devant \^etre structur\'ee, le
+point o\`u elle rencontre le processus structurant et sans lequel cette
+derni\`ere n'eut pu \^etre l\'egitim\'ee.}
+
+\SubSubTitle{L\'egif\'erer pour la Non{}-conformit\'e}
+
+Il y a des parall\`eles \`a \'etablir avec la mani\`ere dont le Logiciel
+Libre s'appuie sur le copyleft et la GPL qui peut aussi \^etre vue
+comme une mode de \quote{l\'egislation pour la non{}-conformit\'e}. La GPL
+peut certes \quote{retourner} les restrictions normales cr\'e\'ees par le
+droit d'auteur traditionnel, mais cela d\'epend
+n\'eanmoins de leur cadre l\'egal de base et donc d'une notion
+l\'egalis\'ee de libert\'e r\'ealis\'ee par l'entremise de la
+propri\'et\'e exclusive. De l\`a vient l'attraction du copyleft pour
+des libertariens de droite tels qu'Eric Raymond. En effet, on peut
+avancer que le copyleft, dans sa r\'ealisation actuelle, plut\^ot que
+d'incarner une forme de \quote{production en commun} illustre en r\'ealit\'e
+quelque chose de plus proche de la \quote{transaction juste} de Robert
+Nozick. Le probl\`eme avec le copyleft est sa forme actuelle et les
+notions de \quote{remix} et de culture l\'egalis\'ee de l' \quote{appropriation}
+qui s'y sont d\'evelopp\'ees, est qu'il pr\'esente simplement une
+alternative {\em au sein} de la production propri\'etaire et
+acquisitive (capitalisme) plut\^ot qu'une alternative \`a celle{}-ci.
+Cela appara\^it dans la promotion active de la \quote{libert\'e}
+jeffersonienne parmi les avocats de l'open source et des Creative
+Commons, tels que Raymond et Lawrence Lessig. Mettre l'emphase sur le
+copyleft comme une fin en soi et sur la GPL comme le document
+d\'efinissant le logiciel libre, est donc potentiellement contraire aux
+objectifs du Logiciel Libre. Un commentaire de Stallman corrobore cela:
+
+\QuoteStyle{Le logiciel libre est une question de libert\'e. De notre point de vue,
+savoir quel est pr\'ecis\'ement le m\'ecanisme l\'egal utilis\'e pour
+d\'enier toute libert\'e aux utilisateurs du logiciel est juste un
+d\'etail d'impl\'ementation. Que ce soit fait avec le droit
+d'auteur, avec les contrats, ou de tout autre
+mani\`ere, il est faux de refuser au public les libert\'es
+n\'ecessaires pour former une communaut\'e et coop\'erer. C'est
+pourquoi il est inexact de comprendre le Mouvement du Logiciel Libre
+comme \'etant sp\'ecifiquement une question d'opposition au droit
+d'auteur sur le logiciel. C'est \`a la fois plus et
+moins que cela.}
+
+Il est significatif que cette remarque \'etait une r\'eponse \`a la
+promotion du copyleft par Robert T. Long comme \'etant compatible avec
+les valeurs d'un march\'e libre libertarien. C'est peut{}-\^etre mieux
+d\`es lors d'envisager la GPL et le copyleft comme des tactiques
+conf\'erant un certain levier dans les circonstances actuelles. La
+prolif\'eration des licenses \quote{libres} dans les derni\`eres ann\'ees
+pourrait \^etre plus le signe de l'am\'enagement de pratiques
+r\'esistantes \`a un ordre de l\'egitimation qu'ils feraient mieux
+d'\'eviter, dans la mesure o\`u, dans le droit actuel, il n'existe
+aucun sch\'ema magique de license qui mettra fin \`a la production
+propri\'etaire.
+
+\SubSubTitle{Production Distributive}
+
+Les conflits au sein du Scratch Orchestra et les conflits entre Logiciel
+Libre et Logiciel Open Source illustrent les distinctions, parmi les
+formes de production, entre celles qui sont collectives et
+distributives, et celles qui sont collaboratives et acquisitives. Une
+pratique distributive permet l'arrangement du travail par d'autres sous
+leur propre direction, tandis qu'une pratique acquisitive accumule le
+travail des autres sans \'egard pour leur auto disposition. Elle expose
+\'egalement le conflit qui peut \'emerger quand une pratique qui s'est
+d\'evelopp\'ee au sein d'une communaut\'e auto{}-constitu\'ee devient
+l'objet de formes externes de constitution et de l\'egitimation. Par
+cons\'equent, toute collaboration n'est pas par essence distributive.
+La nature des relations de pouvoir en son sein, ainsi que la
+disposition et la l\'egitimation de la production qu'elles permettent,
+peut \^etre soumise \`a des forces contradictoires.
+
+L'importance de groupes tels que le Scratch Orchestra \`a la fin des
+ann\'ees 60, jusqu'\`a l'\'emergence, presque quarante ans plus tard,
+du livecoding, peut \^etre li\'ee aux changements de formes
+g\'en\'erales de production qui ont pris place durant cette p\'eriode.
+A une \'epoque o\`u l'\quote{\'economie de l'information} \'etait encore
+\'emergente, et les outils et cadres conceptuels qui l'ont soutenue
+encore embryonnaires, des projets tels que le Scratch Orchestra et les
+LOGO Labs furent des tentatives de cr\'eer une trajectoire
+\'emancipatrice avec les ressources et le savoir disponible.
+Aujourd'hui nous sommes \`a une \'epoque o\`u l'\quote{\'economie de
+l'information} s'est consolid\'ee et ses modes distinctifs de
+production sont plus \'etablis et envahissants. C'est UNIX, pr\'etend
+Martin Hardie, avec son syst\`eme de fichiers mis en r\'eseau et distribu\'e, qui a cr\'e\'e l'inscription de la notation de base pour ces modes de
+production. La production de notation elle{}-m\^eme est devenu un
+\'el\'ement cl\'e de la production et de la consommation contemporaine,
+les masses y \'etant impliqu\'ees d'une mani\`ere que Cardew n'aurait
+jamais pu pr\'evoir ni souhaiter. Chaque aspect de nos vies est not\'e
+\`a un degr\'e inconnu jusqu'alors et nous sommes sans cesse mis au
+d\'efi par de nouvelles compositions et scripts que nous devons
+ex\'ecuter pour accomplir m\^eme la t\^ache la plus m\'ediocre. C'est
+par une telle notation que le travail immat\'eriel est valoris\'e et
+aussi g\'er\'e, et que nous sommes amen\'es \`a collaborer avec les
+processus m\^emes de production qu'elle inscrit. En effet, une telle
+collaboration est devenue le paradigme dominant \`a la fois du
+contr\^ole manag\'erial et de la consommation quotidienne, tel
+qu'illustr\'e dans la prolif\'eration de produits et services hautement
+\quote{personnalis\'es}, le loisir de r\'ealit\'e et les r\'eseaux sociaux du
+Web 2.0. Cette forme de collaboration, cependant, est construite par
+des m\'ecanismes acquisitifs plut\^ot que distributifs. Par ce biais,
+l'usine en tant qu'une unit\'e singuli\`ere et coh\'erente de
+production a laiss\'e la place \`a des syst\`emes de r\'eseaux
+amorphes. Dans une certaine mesure ces d\'eveloppements ont \'et\'e
+accompagn\'es par l'\'evolution de groupes compos\'es d'un nombre de
+membres relativement stable tels le Scratch Orchestra ou Art Ensemble
+of Chicago, vers des groupes et individus connect\'es de mani\`ere
+beaucoup plus diffuse qui sont caract\'eristiques de la sc\`ene
+artistique li\'ee au Logiciel Libre et Open Source. De la m\^eme
+mani\`ere, des pratiques qui auparavant pouvaient \^etre limit\'ees \`a
+un seul groupe, telles que la composition de musique scratch, sont
+devenues de plus en plus diss\'emin\'ees et r\'epandues, des
+r\'epertoires de code en ligne rempla\c{c}ant la circulation de livre
+de scratch et la pratique artistique \'etant valoris\'ee dans une plus
+grande mesure qu'avant, et parfois comme un but en soi. Ceci traduit
+les intersections et les conflits entre les pratiques dominantes et
+r\'esistantes qui caract\'erisent la nature dialectique de la
+production en g\'en\'eral. Si le livecoding est embl\'ematique d'une
+nouvelle trajectoire \'emancipatrice \'emergeant au sein de cette
+dialectique, alors il sera utile de r\'eexaminer les probl\`emes de
+notations et la politique de la production de notation tels
+qu'exp\'eriment\'es et travaill\'es par ceux qui ont dans le pass\'e
+apport\'e le code sur le devant de la sc\`ene.}
